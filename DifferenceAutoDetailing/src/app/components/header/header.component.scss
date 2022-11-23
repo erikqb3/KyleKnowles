@@ -1,0 +1,225 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width:0) { //MOBILE
+  header{
+    position:absolute;
+    top:0;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    z-index:2;
+    background: rgb(97,102,116);
+    background: linear-gradient(180deg, rgba(97,102,116,1) 0%, rgba(0,0,0,0) 100%);
+    a#logoHolder{
+      z-index: 2;
+      position: absolute;
+      top:0;
+      img{}
+    }
+    nav#mainNav{
+      display:none;
+    }
+    nav#mobileNav{
+      position:fixed;
+      top:0;
+      width: 100%;
+      height: 0%;
+      transition:all 0.25s ease-in-out;
+      // overflow-x: hidden;
+      div#menuBtn{
+        position:absolute;
+        background-color: transparent;
+        border: 0;
+        right:0px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        z-index: 2;
+        border-radius: 5px;
+        cursor: pointer;
+        // transition:all 0.25s ease-in-out;
+        overflow:hidden;
+        // border: 3px solid black;
+        .burger,
+        .burger::before,
+        .burger::after{
+          width: 35px;
+          height: 3px;
+          background-color:white;
+          border-radius: 5px;
+          transition: all 0.25s ease-in-out;
+        }
+        .burger::before,
+        .burger::after{
+          content: "";
+          position: absolute;
+        }
+        .burger::before{
+          transform: translateY(-12px);
+        }
+        .burger::after{
+          transform: translateY(12px);
+        }  
+    }
+    div#navOption_holder{
+      width: 100%;
+      height:0vh;
+      position: relative;
+      bottom:0%;
+      top:100%;
+      display:flex;
+      ul{
+        display:none;
+      }
+    }
+    }
+    nav#mobileNav.open{
+      height: 100%;
+      div#menuBtn{
+        // right: 100px;
+        .burger,
+        .burger::before,
+        .burger::after{
+        }
+        .burger{
+          transform: translateX(75px);
+          background-color: transparent;
+        }
+        .burger::before,
+        .burger::after{
+          
+        }
+        .burger::before{
+          transform: rotate(45deg) translate(-50px, 50px)
+        }
+        .burger::after{
+          transform: rotate(-45deg) translate(-50px, -50px)
+        }  
+    }
+    div#navOption_holder{
+      background-color: rgba(0,0,0,0.75);
+      height: 100vh;
+      top:0;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+      ul{
+        // z-index:1;
+        // top:0;
+        // width: 100%;
+        // height: 100vh;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        // margin-top: -2.5rem;
+        li{
+          margin:1rem;
+          a:link,
+          a:visited{
+            color:white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    }
+  }
+}
+@media only screen and (min-width:768px) { //MOBILE
+  header{
+    a#logoHolder{
+      img{}
+    }
+    nav#mainNav{
+      ul{
+        li{
+          a:link,
+          a:visited{
+          }
+        }
+      }
+    }
+    nav#mobileNav{
+      span{
+        button{}
+      }
+      ul{
+        li{
+          a:link{}
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width:992px) { //MOBILE
+  header{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(97,102,116);
+      background: linear-gradient(180deg, rgba(97,102,116,1) 0%, rgba(0,0,0,0) 100%);
+    a#logoHolder{
+      position: initial;
+      img{}
+    }
+    nav#mainNav{
+      display:flex;
+      justify-self: flex-end;
+      width: 40vw;
+      ul{
+        width: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+        li{
+          a:link,
+          a:visited{
+            color:white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    nav#mobileNav{
+      display:none;
+    }
+  }
+}
+@media only screen and (min-width:1200px) { //MOBILE
+  header{
+    a#logoHolder{
+      img{}
+    }
+    nav#mainNav{
+      ul{
+        li{
+          a:link,
+          a:visited{
+          }
+        }
+      }
+    }
+    nav#mobileNav{
+      span{
+        button{}
+      }
+      ul{
+        li{
+          a:link{}
+        }
+      }
+    }
+  }
+}
+
+

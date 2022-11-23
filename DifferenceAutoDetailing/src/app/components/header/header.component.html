@@ -1,1 +1,29 @@
-<p>header works!</p>
+<header>
+  <a routerLink="owner" id="logoHolder">
+    <img src="#" alt="logo">
+  </a>
+  <nav id="mainNav">
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/deals">Deals</a></li>
+      <li><a routerLink="/reviews">Reviews</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+    </ul>
+  </nav>
+  <nav id="mobileNav" class="" [ngClass]="{open : hamIsX == true}">
+    <!-- <div id="menuBtn" onclick="menuAnimation()"> -->
+    <div (click)="openNav_event()" id="menuBtn">
+      <span class="burger"></span>
+    </div>
+    <div id="navOption_holder">
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/deals">Deals</a></li>
+        <li><a routerLink="/reviews">Reviews</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>

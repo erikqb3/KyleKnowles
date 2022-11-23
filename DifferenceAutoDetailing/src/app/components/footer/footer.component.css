@@ -1,0 +1,21 @@
+@media only all and (min-width: 0px) {
+  section {
+    height: 50vw;
+    background-image: url("../../../assets/imgs/HomePhoto2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+  }
+  section div.overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+}
+@media only all and (min-width: 768px) {
+  section {
+    height: 35rem;
+  }
+}/*# sourceMappingURL=footer.component.css.map */

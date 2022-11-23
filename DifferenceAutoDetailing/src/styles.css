@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 0) {
+  body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,14 +12,27 @@ import { AboutOptComponent } from './components/main/about-opt/about-opt.compone
 import { ContactOptComponent } from './components/main/contact-opt/contact-opt.component';
 import { HomeOptComponent } from './components/main/home-opt/home-opt.component';
 import { ReviewsOptComponent } from './components/main/reviews-opt/reviews-opt.component';
-import { ServicesOptComponent } from './components/main/services-opt/services-opt.component';
+import { DealsOptComponent } from './components/main/deals-opt/deals-opt.component';
 
 import { OwnerComponent } from './components/owner/owner.component';
 import { InfoTabComponent } from './components/owner/info-tab/info-tab.component';
 import { PhotosTabComponent } from './components/owner/photos-tab/photos-tab.component';
 import { ReviewsTabComponent } from './components/owner/reviews-tab/reviews-tab.component';
-import { ServicesTabComponent } from './components/owner/services-tab/services-tab.component';
+import { DealsTabComponent } from './components/owner/deals-tab/deals-tab.component';
 import { TabsComponent } from './components/owner/tabs/tabs.component';
+
+import { RouterModule, Routes } from '@angular/router';
+
+
+
+const appRoutes: Routes = [
+  {path: '', component: MainComponent},
+  {path: 'deals', component: DealsOptComponent},
+  {path: 'reviews', component: ReviewsOptComponent},
+  {path: 'about', component: AboutOptComponent},
+  {path: 'contact', component:ContactOptComponent},
+  {path: 'owner', component:OwnerComponent}
+]
 
 
 @NgModule({
@@ -32,16 +46,18 @@ import { TabsComponent } from './components/owner/tabs/tabs.component';
     ContactOptComponent,
     HomeOptComponent,
     ReviewsOptComponent,
-    ServicesOptComponent,
+    DealsOptComponent,
     InfoTabComponent,
     TabsComponent,
     PhotosTabComponent,
     ReviewsTabComponent,
-    ServicesTabComponent
+    DealsTabComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
