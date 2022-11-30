@@ -1,1 +1,9 @@
-/*# sourceMappingURL=contact-opt.component.css.map */
+@media only screen and (min-width: 0) {
+  div.topBanner {
+    background-image: url("../../../../assets/imgs/FacebookPhotos/289123547_104376825659331_7819983086887748259_n.jpg");
+  }
+  main {
+    background: rgb(97, 102, 116);
+    background: radial-gradient(circle, rgb(97, 102, 116) 0%, rgb(0, 0, 10) 50%);
+  }
+}/*# sourceMappingURL=contact-opt.component.css.map */

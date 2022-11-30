@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"tabs.component.css"}
+{"version":3,"sources":["tabs.component.scss","tabs.component.css"],"names":[],"mappings":"AACE;EACE,WAAA;EACA,aAAA;EACA,eAAA;EAEA,gBAAA;EACA,SAAA;EACA,UAAA;ACDJ;ADEI;EACE,aAAA;EACA,UAAA;EACA,qBAAA;EACA,kBAAA;EACA,aAAA;EACA,mBAAA;ACAN;ADCM;;EAEE,WAAA;EACA,kBAAA;EACA,qBAAA;ACCR","file":"tabs.component.css"}

@@ -1,1 +1,15 @@
-/*# sourceMappingURL=owner.component.css.map */
+.topBanner {
+  height: 100vh;
+  background-image: url("../../../assets/imgs/CoverPhoto1.jpg");
+}
+.topBanner .overlay {
+  display: flex;
+  flex-direction: column;
+}
+.topBanner .overlay section {
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 95%;
+}
+.topBanner .overlay section div {
+  height: 50vh;
+}/*# sourceMappingURL=owner.component.css.map */

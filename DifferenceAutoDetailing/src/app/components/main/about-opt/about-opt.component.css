@@ -1,1 +1,26 @@
-/*# sourceMappingURL=about-opt.component.css.map */
+@media only screen and (min-width: 0) {
+  div.topBanner {
+    background-image: url("../../../../assets/imgs/HomePhoto1.jpg");
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  div.topBanner .overlay {
+    padding: 25vh 0;
+    display: block;
+    color: white;
+  }
+  div.topBanner .overlay h1 {
+    text-align: center;
+  }
+  div.topBanner .overlay div#bio {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.25rem;
+  }
+  main {
+    background: rgb(97, 102, 116);
+    background: radial-gradient(circle, rgb(97, 102, 116) 0%, rgb(0, 0, 10) 50%);
+  }
+}/*# sourceMappingURL=about-opt.component.css.map */

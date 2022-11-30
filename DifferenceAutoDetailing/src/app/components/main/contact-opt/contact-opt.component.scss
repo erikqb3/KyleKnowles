@@ -1,0 +1,19 @@
+@media only screen and (min-width:0){
+  div.topBanner{
+    background-image: url('../../../../assets/imgs/FacebookPhotos/289123547_104376825659331_7819983086887748259_n.jpg');
+    .overlay{
+      // background-color: rgba(0,0,0,0);
+    }
+  }
+  main {
+    background: rgb(97,102,116);
+    background: radial-gradient(circle, rgba(97,102,116,1) 0%, rgba(0,0,10,1) 50%);
+  }
+  
+}
+@media only screen and (min-width: 786px){
+
+}
+@media only screen and (min-width: 992){
+
+}

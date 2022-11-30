@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"about-opt.component.css"}
+{"version":3,"sources":["about-opt.component.scss","about-opt.component.css"],"names":[],"mappings":"AAAA;EACE;IACE,+DAAA;IACA,2BAAA;IAAA,wBAAA;IAAA,mBAAA;ECCF;EDAE;IACE,eAAA;IACA,cAAA;IAGA,YAAA;ECAJ;EDCI;IACE,kBAAA;ECCN;EDEI;IACE,UAAA;IACA,cAAA;IACA,4CAAA;IACA,kBAAA;ECAN;EDKA;IACE,6BAAA;IACA,4EAAA;ECHF;AACF","file":"about-opt.component.css"}

@@ -1,0 +1,29 @@
+@media only all and (min-width: 0){
+  .review{
+    width: 80vw;
+    margin:1rem auto;
+    padding: 1.5rem;
+    border: 1px solid white;
+    background-color: rgb(255,255,255,0.25);
+    color: black;
+    border-radius: 10px;
+    h3{
+      font-weight: lighter;
+    }
+    .row{
+      display:flex;
+      flex-direction: row;
+      width:100%;
+      flex-wrap:nowrap;
+      justify-content: space-between;
+      margin:0;
+      span{
+        width: fit-content;
+        padding:0;
+      }
+    }
+  }
+}
+@media only all and (min-width: 786px){
+  
+}

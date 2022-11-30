@@ -1,76 +1,125 @@
 {
-  "bannerPhotos" : [
+  "BackgroundPhotos" : [
     {
       "id":0,
       "page":"home",
-      "version":"small",
+      "type":"hero",
       "alt":"homePic_sm",
       "path":""
     },
     {
       "id":1,
       "page":"home",
-      "version":"large",
+      "type":"secondary",
       "alt":"homePic_lg",
       "path":""
     },
     {
       "id":2,
-      "page":"services",
-      "version":"small",
+      "page":"deals",
+      "type":"hero",
       "alt":"servicesPic_sm",
       "path":""
     },
     {
       "id":3,
       "page":"services",
-      "version":"large",
+      "type":"secondary",
       "alt":"servicesPic_lg",
       "path":""
     },
     {
       "id":4,
       "page":"reviews",
-      "version":"small",
+      "type":"hero",
       "alt":"reviewsPic_sm",
       "path":""
     },
     {
       "id":5,
       "page":"reviews",
-      "version":"large",
+      "type":"secondary",
       "alt":"reviewsPic_lg",
       "path":""
     },
     {
       "id":6,
       "page":"about",
-      "version":"small",
+      "type":"hero",
       "alt":"aboutPic_sm",
       "path":""
     },
     {
       "id":7,
       "page":"about",
-      "version":"large",
+      "type":"secondary",
       "alt":"aboutPic_lg",
       "path":""
     },
     {
       "id":8,
       "page":"contact",
-      "version":"small",
+      "type":"hero",
       "alt":"contactPic_sm",
       "path":""
     },
     {
       "id":9,
       "page":"contact",
-      "version":"large",
+      "type":"secondary",
       "alt":"contactPic_lg",
       "path":""
     }
     
   ],
-  "portfolioPhotos" : []
+  "portfolioPhotos" : [
+    {
+      "id":0,
+      "label":"Thorough Vaccuming",
+      "beforePic":"src",
+      "afterPic":"src"
+    },
+    {
+      "id":1,
+      "label":"Steam Sanitation",
+      "beforePic":"src",
+      "afterPic":"src"
+    },
+    {
+      "id":2,
+      "label":"Complete Surface Cleaning",
+      "beforePic":"src",
+      "afterPic":"src"
+    },
+    {
+      "id":3,
+      "label":"Air Sanitation",
+      "beforePic":"src",
+      "afterPic":"src"
+    },
+    {
+      "id":4,
+      "label":"UV Plastic Protection",
+      "beforePic":"src",
+      "afterPic":"src"
+    },
+    {
+      "id":5,
+      "label":"Leather Cleaning and Conditioning",
+      "beforePic":"src",
+      "afterPic":"src"
+    },
+    {
+      "id":6,
+      "label":"Shampoo/Extraction",
+      "beforePic":"src",
+      "afterPic":"src"
+    },
+    {
+      "id":7,
+      "label":"Exterior Wash",
+      "beforePic":"src",
+      "afterPic":"src"
+    }
+  ]
 }

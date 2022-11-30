@@ -1,0 +1,25 @@
+nav{
+  ul{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    // justify-content:space-between;
+    list-style: none;
+    margin:0;
+    padding:0;
+    li{
+      padding: 1rem;
+      width: 25%;
+      background-color: red;
+      text-align:center;
+      display:flex;
+      align-items:center;
+      a:link,
+      a:visited{
+        width: 100%;
+        text-align:center;
+        text-decoration: none;
+      }
+    }
+  }
+}

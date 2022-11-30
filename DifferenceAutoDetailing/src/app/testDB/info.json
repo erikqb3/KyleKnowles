@@ -1,0 +1,15 @@
+{
+  "AboutInfo": "",
+  "ContactInfo": {
+    "Name":"Kyle",
+    "Phone":"555-555-5555",
+    "Email":"Kyle@kyle.com",
+    "Address":"Arcadia"
+  },
+  "OneLiners":[
+    {"HomePageInfo":"Difference Between a detail and a clean"},
+    {"DealsNote":"Note: Prices depend on condition of vehicle"},
+    {"FeaturesNote":"Note: Features are included in all Deal Options"}
+
+  ]
+}

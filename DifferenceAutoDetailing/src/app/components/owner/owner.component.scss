@@ -1,0 +1,16 @@
+.topBanner{
+  height: 100vh;
+  background-image: url('../../../assets/imgs/CoverPhoto1.jpg');
+  .overlay{
+    display:flex;
+    flex-direction: column;
+    section{
+      background-color:rgba(255,255,255,0.75);
+      width: 95%;
+      div{
+        height: 50vh;
+      }
+      // padding: 2.5rem;
+    }
+  }
+}

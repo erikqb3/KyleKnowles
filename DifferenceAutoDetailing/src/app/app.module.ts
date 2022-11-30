@@ -12,6 +12,7 @@ import { AboutOptComponent } from './components/main/about-opt/about-opt.compone
 import { ContactOptComponent } from './components/main/contact-opt/contact-opt.component';
 import { HomeOptComponent } from './components/main/home-opt/home-opt.component';
 import { ReviewsOptComponent } from './components/main/reviews-opt/reviews-opt.component';
+import { SingleReviewComponent } from './components/main/reviews-opt/singleReview/single-review/single-review.component';
 import { DealsOptComponent } from './components/main/deals-opt/deals-opt.component';
 
 import { OwnerComponent } from './components/owner/owner.component';
@@ -22,17 +23,8 @@ import { DealsTabComponent } from './components/owner/deals-tab/deals-tab.compon
 import { TabsComponent } from './components/owner/tabs/tabs.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from "@angular/common/http"
 
-
-
-const appRoutes: Routes = [
-  {path: '', component: MainComponent},
-  {path: 'deals', component: DealsOptComponent},
-  {path: 'reviews', component: ReviewsOptComponent},
-  {path: 'about', component: AboutOptComponent},
-  {path: 'contact', component:ContactOptComponent},
-  {path: 'owner', component:OwnerComponent}
-]
 
 
 @NgModule({
@@ -51,13 +43,14 @@ const appRoutes: Routes = [
     TabsComponent,
     PhotosTabComponent,
     ReviewsTabComponent,
-    DealsTabComponent
+    DealsTabComponent,
+    SingleReviewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    RouterModule.forRoot(appRoutes)
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
