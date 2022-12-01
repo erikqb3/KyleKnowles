@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { range } from 'rxjs';
-import { Review } from '../../review.model';
+import { Review } from '../review.model';
 
 @Component({
   selector: 'app-single-review',

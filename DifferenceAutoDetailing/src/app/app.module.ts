@@ -12,7 +12,8 @@ import { AboutOptComponent } from './components/main/about-opt/about-opt.compone
 import { ContactOptComponent } from './components/main/contact-opt/contact-opt.component';
 import { HomeOptComponent } from './components/main/home-opt/home-opt.component';
 import { ReviewsOptComponent } from './components/main/reviews-opt/reviews-opt.component';
-import { SingleReviewComponent } from './components/main/reviews-opt/singleReview/single-review/single-review.component';
+import { ReviewCreateComponent } from './components/main/reviews-opt/review-create/review-create.component'
+import { SingleReviewComponent } from './components/main/reviews-opt/singleReview/single-review.component';
 import { DealsOptComponent } from './components/main/deals-opt/deals-opt.component';
 
 import { OwnerComponent } from './components/owner/owner.component';
@@ -23,7 +24,8 @@ import { DealsTabComponent } from './components/owner/deals-tab/deals-tab.compon
 import { TabsComponent } from './components/owner/tabs/tabs.component';
 
 import { RouterModule, Routes } from '@angular/router';
-import { HttpClientModule } from "@angular/common/http"
+import { HttpClientModule } from "@angular/common/http";
+import { SingleReviewOwnerComponent } from './src/app/components/owner/reviews-tab/singleReview_owner/single-review-owner/single-review-owner.component';
 
 
 
@@ -44,7 +46,9 @@ import { HttpClientModule } from "@angular/common/http"
     PhotosTabComponent,
     ReviewsTabComponent,
     DealsTabComponent,
-    SingleReviewComponent
+    SingleReviewComponent,
+    ReviewCreateComponent,
+    SingleReviewOwnerComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,16 +10,21 @@ nav{
     li{
       padding: 1rem;
       width: 25%;
-      background-color: red;
+      background-color: rgb(75, 75, 75);
       text-align:center;
       display:flex;
       align-items:center;
+      transition:all 0.25s ease-in-out;
       a:link,
       a:visited{
         width: 100%;
         text-align:center;
         text-decoration: none;
       }
+    }
+    li:hover,
+    li:active {
+      background-color: rgba(50,50,50);
     }
   }
 }

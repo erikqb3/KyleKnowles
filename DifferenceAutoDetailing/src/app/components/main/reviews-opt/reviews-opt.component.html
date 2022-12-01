@@ -5,17 +5,7 @@
 </div>
 
 <main>
-  <form action="">
-    <fieldset>
-      <legend>Share your thoughts</legend>
-      <label for="reviewer">Name</label>
-      <input id="reviewer" type="text">
-      <label for="rating">Rating (1-5)</label>
-      <input type="range" name="rating" id="rating" min="0" max="5">
-      <textarea name="reviewText" id="reviewText" cols="30" rows="10"></textarea>
-      <button type="submit">Submit</button>
-    </fieldset>
-  </form>
+  <app-review-create></app-review-create>
   <app-single-review
     *ngFor="let review_element of reviews"
     [review]="review_element"
