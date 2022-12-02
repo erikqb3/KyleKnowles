@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { range } from 'rxjs';
 import { Review } from 'src/app/models/review.model';
+import { ReviewsOptService } from 'src/app/services/reviews-opt.service';
 
 @Component({
   selector: 'app-single-review',
@@ -11,17 +12,15 @@ export class SingleReviewComponent implements OnInit {
   @Input()review!: Review;
 
   
-  constructor() { }
+  constructor(
+    private reviewService: ReviewsOptService
+  ) { }
 
   ngOnInit(): void {
     console.log(this.review);
-    this.getStars(this.review?.rating)
+    this.reviewService.getStars(this.review, this.review?.rating)
   }
 
-  getStars(rating:number): void {
-    for (let i = 0; i < rating; i++){
-      this.review.starCount += "⭐";
-    }
-  }
+
 
 }

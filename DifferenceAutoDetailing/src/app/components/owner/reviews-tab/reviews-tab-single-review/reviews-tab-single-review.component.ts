@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Review } from 'src/app/models/review.model';
+import { ReviewsOptService } from 'src/app/services/reviews-opt.service';
 
 @Component({
   selector: 'app-reviews-tab-single-review',
@@ -8,12 +9,18 @@ import { Review } from 'src/app/models/review.model';
 })
 export class ReviewsTabSingleReviewComponent implements OnInit {
 @Input()review!: Review;
+@Input()reviewId: number;
 @Output() reviewTagSelected = new EventEmitter<void>();
 
-  constructor() { }
+  constructor(
+    private reviewService: ReviewsOptService
+  ) { }
 
   ngOnInit(): void {
-    console.log(this.review);
+    console.log(this.review.id.toString());
+    this.reviewService.getStars(this.review, this.review.rating);
+    // console.log("1")
+    // const review: Review = this.reviewService.getReview(this.review.id);
   }
 
 }

@@ -14,6 +14,7 @@ export class ReviewsOptService {
   public reviewTagSelectedEvent = new Subject<Review>();
   public reviewChangedEvent = new Subject<Review[]>();
   public maxReviewId!: number;
+  public gottenReview: Review;
 
   constructor(
     private http: HttpClient
@@ -55,6 +56,20 @@ export class ReviewsOptService {
             return this.reviews;
           }
         )
+  }
+  getReview(id:string): Review {
+    console.log(this.reviews);
+    this.reviews.forEach(singleReview => {
+      if (id == singleReview.id) {
+        this.gottenReview = singleReview;
+      }
+    });
+    return this.gottenReview;
+  }
+  getStars(review:Review, rating:number): void {
+    for (let i = 0; i < rating; i++){
+      review.starCount += "⭐";
+    }
   }
 
   storeReview(){

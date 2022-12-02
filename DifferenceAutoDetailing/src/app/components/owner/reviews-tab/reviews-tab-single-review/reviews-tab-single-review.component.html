@@ -1,3 +1,7 @@
 <div class="singleReview">
-  <h4>{{review?.reviewer}}</h4>
+  <a 
+    [routerLink]="[review.id]"
+    routerLinkActive="active">
+    <h4>{{review?.reviewer}}</h4>
+  </a>
 </div>

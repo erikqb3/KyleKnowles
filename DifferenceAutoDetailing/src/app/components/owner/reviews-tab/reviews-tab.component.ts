@@ -35,6 +35,7 @@ export class ReviewsTabComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.reviewChangedEvent_sub?.unsubscribe();
+    this.reviewSelectedEvent_sub?.unsubscribe();
   }
 
   onReviewTagSelected(review: Review){

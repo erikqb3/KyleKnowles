@@ -4,9 +4,14 @@
     position: relative;
     div.reviewTags{
       width: 30%;
+      min-height: 10vh;
+      max-height: 60vh;
+      overflow-y: auto;
     }
     div.reviewDisplay{
       width: 70%;
+      min-height: 10vh;
+      max-height: 60vh;
     }
   }
 }
