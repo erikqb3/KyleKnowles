@@ -67,8 +67,10 @@ export class ReviewsOptService {
     return this.gottenReview;
   }
   getStars(review:Review, rating:number): void {
-    for (let i = 0; i < rating; i++){
-      review.starCount += "⭐";
+    if (review.starCount == ""){
+      for (let i = 0; i < rating; i++){
+        review.starCount += "⭐";
+      }
     }
   }
 

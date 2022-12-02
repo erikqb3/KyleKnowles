@@ -17,9 +17,7 @@ export class ReviewsTabSingleReviewComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log(this.review.id.toString());
     this.reviewService.getStars(this.review, this.review.rating);
-    // console.log("1")
     // const review: Review = this.reviewService.getReview(this.review.id);
   }
 

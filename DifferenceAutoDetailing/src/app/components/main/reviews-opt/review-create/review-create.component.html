@@ -1,16 +1,21 @@
-<form action="">
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
   <fieldset>
     <legend>Share your thoughts</legend>
     <label for="reviewer">Name</label>
     <input 
       id="reviewer"
       type="text"
+      name="reviewer"
+      [ngModel]="review?.reviewer"
+      #reviewer="ngModel"
       required
       >
     <label for="rating">Rating (1-5)</label>
     <input 
       type="range" 
       name="rating" 
+      [ngModel]="review?.rating"
+      rating="ngModel"
       id="rating" 
       min="0" max="5"
       value="0"
@@ -18,6 +23,9 @@
     <textarea 
       name="reviewText" 
       id="reviewText" 
+      name="reviewText"
+      [ngModel]="review?.reviewText"
+      #reviewText="ngModel"
       cols="30" rows="10"
       required
 

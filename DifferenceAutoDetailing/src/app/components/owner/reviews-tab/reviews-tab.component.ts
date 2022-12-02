@@ -22,7 +22,6 @@ export class ReviewsTabComponent implements OnInit, OnDestroy {
       .subscribe(
         (reviewArray: Review[]) =>{
           this.reviews = reviewArray;
-          console.log(this.reviews);
         }
       )
     this.reviewSelectedEvent_sub = this.reviewService.reviewTagSelectedEvent

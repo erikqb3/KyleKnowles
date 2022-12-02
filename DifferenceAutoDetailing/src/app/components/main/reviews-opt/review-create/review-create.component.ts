@@ -20,16 +20,18 @@ export class ReviewCreateComponent implements OnInit {
 
   onSubmit(form: NgForm){
     const value = form.value;
-    console.log(value);
+    // const today = new Date();
+    const dateNow = Date.now();
+
     const newReview = new Review(
       this.reviewService.getMaxId().toString(),
       value.reviewer,
       value.rating,
-      new Date(),
+      new Date(dateNow).toDateString(),
       value.reviewText,
-      "",
-      true
+      ""
     );
+    console.log(newReview);
     this.reviewService.addReview(newReview);
     form.reset();
   }

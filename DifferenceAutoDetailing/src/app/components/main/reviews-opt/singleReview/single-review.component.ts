@@ -17,7 +17,6 @@ export class SingleReviewComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log(this.review);
     this.reviewService.getStars(this.review, this.review?.rating)
   }
 
