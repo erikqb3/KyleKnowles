@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy} from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Review } from '../../../models/review.model';
-import { ReviewsOptService } from 'src/app/services/reviews-opt.service'
+import { ReviewsOptService } from 'src/app/services/reviews.service'
 
 @Component({
   selector: 'app-reviews-opt',

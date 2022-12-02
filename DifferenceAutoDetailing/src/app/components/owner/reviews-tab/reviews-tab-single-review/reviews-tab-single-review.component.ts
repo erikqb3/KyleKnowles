@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Review } from 'src/app/models/review.model';
-import { ReviewsOptService } from 'src/app/services/reviews-opt.service';
+import { ReviewsOptService } from 'src/app/services/reviews.service';
 
 @Component({
   selector: 'app-reviews-tab-single-review',

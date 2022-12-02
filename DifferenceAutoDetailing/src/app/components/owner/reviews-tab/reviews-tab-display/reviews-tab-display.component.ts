@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Review } from 'src/app/models/review.model';
-import { ReviewsOptService } from 'src/app/services/reviews-opt.service';
+import { ReviewsOptService } from 'src/app/services/reviews.service';
 
 @Component({
   selector: 'app-reviews-tab-display',

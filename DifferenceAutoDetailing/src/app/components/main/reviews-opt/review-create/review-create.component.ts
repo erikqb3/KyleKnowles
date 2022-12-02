@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Review } from '../../../../models/review.model';
-import { ReviewsOptService } from 'src/app/services/reviews-opt.service';
+import { ReviewsOptService } from 'src/app/services/reviews.service';
 
 @Component({
   selector: 'app-review-create',
