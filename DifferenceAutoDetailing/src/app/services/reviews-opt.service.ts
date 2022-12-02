@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Review } from '../../../models/review.model';
+import { Review } from '../models/review.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Subject } from 'rxjs';
 // import { ContactOptComponent } from '../contact-opt/contact-opt.component';
@@ -11,6 +11,7 @@ export class ReviewsOptService {
   private reviews: Review[] = [];
   private fireBase_link: string = "https://kyleknowles-749f3-default-rtdb.firebaseio.com/Reviews.json";
   private currentId!: number;
+  public reviewTagSelectedEvent = new Subject<Review>();
   public reviewChangedEvent = new Subject<Review[]>();
   public maxReviewId!: number;
 
@@ -49,8 +50,8 @@ export class ReviewsOptService {
           (reviews: Review[])=>{
             this.reviews = reviews;
             this.reviewChangedEvent.next(this.reviews.slice());
-            console.log(this.reviews);
-            console.log(reviews);
+            // console.log(this.reviews);
+            // console.log(reviews);
             return this.reviews;
           }
         )

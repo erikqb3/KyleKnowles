@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Review } from '../review.model';
+import { Review } from '../../../../models/review.model';
 import { ReviewsOptService } from '../reviews-opt.service';
 
 @Component({

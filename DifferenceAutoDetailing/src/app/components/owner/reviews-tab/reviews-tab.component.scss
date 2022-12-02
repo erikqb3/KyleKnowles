@@ -1,0 +1,12 @@
+@media only all and (min-width: 0px) {
+  section{
+    display:flex;
+    position: relative;
+    div.reviewTags{
+      width: 30%;
+    }
+    div.reviewDisplay{
+      width: 70%;
+    }
+  }
+}

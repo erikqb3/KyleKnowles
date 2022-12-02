@@ -20,6 +20,8 @@ import { OwnerComponent } from './components/owner/owner.component';
 import { InfoTabComponent } from './components/owner/info-tab/info-tab.component';
 import { PhotosTabComponent } from './components/owner/photos-tab/photos-tab.component';
 import { ReviewsTabComponent } from './components/owner/reviews-tab/reviews-tab.component';
+import { ReviewsTabSingleReviewComponent } from './components/owner/reviews-tab/reviews-tab-single-review/reviews-tab-single-review.component';
+import { ReviewsTabDisplayComponent } from './components/owner/reviews-tab/reviews-tab-display/reviews-tab-display.component';
 import { DealsTabComponent } from './components/owner/deals-tab/deals-tab.component';
 import { TabsComponent } from './components/owner/tabs/tabs.component';
 
@@ -49,6 +51,8 @@ import { SingleReviewOwnerComponent } from './src/app/components/owner/reviews-t
     SingleReviewComponent,
     ReviewCreateComponent,
     SingleReviewOwnerComponent,
+    ReviewsTabSingleReviewComponent,
+    ReviewsTabDisplayComponent,
   ],
   imports: [
     BrowserModule,

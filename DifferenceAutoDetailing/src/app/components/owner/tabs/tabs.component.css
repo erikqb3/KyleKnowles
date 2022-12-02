@@ -9,14 +9,19 @@ nav ul {
 nav ul li {
   padding: 1rem;
   width: 25%;
-  background-color: red;
+  background-color: rgb(75, 75, 75);
   text-align: center;
   display: flex;
   align-items: center;
+  transition: all 0.25s ease-in-out;
 }
 nav ul li a:link,
 nav ul li a:visited {
   width: 100%;
   text-align: center;
   text-decoration: none;
+}
+nav ul li:hover,
+nav ul li:active {
+  background-color: rgb(50, 50, 50);
 }/*# sourceMappingURL=tabs.component.css.map */

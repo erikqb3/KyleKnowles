@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy} from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Review } from './review.model';
-import { ReviewsOptService } from './reviews-opt.service';
+import { Review } from '../../../models/review.model';
+import { ReviewsOptService } from 'src/app/services/reviews-opt.service'
 
 @Component({
   selector: 'app-reviews-opt',
   templateUrl: './reviews-opt.component.html',
   styleUrls: ['./reviews-opt.component.scss']
 })
-export class ReviewsOptComponent implements OnInit {
+export class ReviewsOptComponent implements OnInit, OnDestroy {
   reviews: Review[] = [];
   reviewChangedEvent_sub?: Subscription;
 
@@ -22,6 +22,10 @@ export class ReviewsOptComponent implements OnInit {
           this.reviews = reviewArray;
         }
       )
+  }
+
+  ngOnDestroy(): void {
+    this.reviewChangedEvent_sub?.unsubscribe();
   }
 
 }

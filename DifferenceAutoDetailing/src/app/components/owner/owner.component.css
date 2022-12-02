@@ -11,5 +11,8 @@
   width: 95%;
 }
 .topBanner .overlay section div {
-  height: 50vh;
+  min-height: 50vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }/*# sourceMappingURL=owner.component.css.map */

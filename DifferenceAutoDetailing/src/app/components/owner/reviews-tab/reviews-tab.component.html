@@ -1,1 +1,12 @@
-<p>reviews-tab works!</p>
+<section>
+  <div class="reviewTags">
+    <app-reviews-tab-single-review
+      *ngFor="let review_element of reviews"
+      [review]="review_element"
+      (reviewTagSelected)="onReviewTagSelected(review_element)"
+      ></app-reviews-tab-single-review>
+  </div>
+  <div class="reviewDisplay">
+    <app-reviews-tab-display></app-reviews-tab-display>
+  </div>
+</section>

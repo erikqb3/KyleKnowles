@@ -10,7 +10,7 @@ nav{
     li{
       padding: 1rem;
       width: 25%;
-      background-color: rgb(75, 75, 75);
+      background-color: rgb(50, 50, 50);
       text-align:center;
       display:flex;
       align-items:center;
@@ -24,7 +24,7 @@ nav{
     }
     li:hover,
     li:active {
-      background-color: rgba(50,50,50);
+      background-color: rgba(25,25,25);
     }
   }
 }
