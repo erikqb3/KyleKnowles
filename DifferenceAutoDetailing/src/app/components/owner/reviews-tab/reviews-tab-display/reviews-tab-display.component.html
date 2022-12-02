@@ -1,4 +1,10 @@
-<h3>{{review?.reviewer}}</h3>
-<p>{{review?.starCount}}</p>
-<p>{{review?.reviewDate}}</p>
-<div>{{review?.reviewText}}</div>
+<section *ngIf="review?.id">
+  <h3>{{review?.reviewer}}</h3>
+  <p>{{review?.starCount}}</p>
+  <p>{{review?.reviewDate}}</p>
+  <div>{{review?.reviewText}}</div>
+  <button 
+    type='button' 
+    (click)="onDelete()"
+    >Delete</button>
+</section>

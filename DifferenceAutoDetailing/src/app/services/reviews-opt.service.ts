@@ -8,6 +8,9 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class ReviewsOptService {
+  // deleteReview(review: Review) {
+  //   throw new Error('Method not implemented.');
+  // }
   private reviews: Review[] = [];
   private fireBase_link: string = "https://kyleknowles-749f3-default-rtdb.firebaseio.com/Reviews.json";
   private currentId!: number;
@@ -26,8 +29,8 @@ export class ReviewsOptService {
     if ((newReview == null)||(newReview == undefined)){
       return;
     }
-    this.maxReviewId++;
-    newReview.id = this.maxReviewId.toString();
+    // this.maxReviewId++;
+    // newReview.id = this.maxReviewId.toString();
     this.reviews.push(newReview);
     this.storeReview();
 
@@ -37,11 +40,13 @@ export class ReviewsOptService {
     let maxId = 0;
 
     this.reviews.forEach(review => {
+      console.log(review.id)
       this.currentId =+ review.id;
       if (this.currentId > maxId){
         maxId = this.currentId;
       } 
     });
+    console.log(maxId);
     return maxId;
   }
   getReviews(){
@@ -73,6 +78,18 @@ export class ReviewsOptService {
       }
     }
   }
+  onDelete(review: Review){
+    if (!review){
+      return;
+    }
+    const pos = this.reviews.indexOf(review);
+    if (pos < 0){
+      return;
+    }
+
+    this.reviews.splice(pos,1);
+    this.storeReview();
+  } 
 
   storeReview(){
     const storedReview = this.reviews;

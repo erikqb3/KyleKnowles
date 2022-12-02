@@ -28,4 +28,10 @@ export class ReviewsTabDisplayComponent implements OnInit {
       )
   }
 
+  onDelete(){
+    console.log(this.review);
+    this.reviewService.onDelete(this.review);
+    this.router.navigateByUrl('owner/reviews')
+  }
+
 }

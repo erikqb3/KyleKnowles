@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"reviews-tab-single-review.component.css"}
+{"version":3,"sources":["reviews-tab-single-review.component.scss","reviews-tab-single-review.component.css"],"names":[],"mappings":"AAAA;EACE;IACE,2CAAA;IACA,YAAA;IAEA,kBAAA;IACA,iCAAA;IACA,MAAA;ECAF;EDCE;;IAEE,qBAAA;IACA,WAAA;IACA,YAAA;IACA,aAAA;IACA,mBAAA;IACA,oBAAA;IACA,6BAAA;IACA,gCAAA;ECCJ;EDAI;;IACE,SAAA;ECGN;EDEA;;IAEE,wCAAA;ECAF;AACF","file":"reviews-tab-single-review.component.css"}

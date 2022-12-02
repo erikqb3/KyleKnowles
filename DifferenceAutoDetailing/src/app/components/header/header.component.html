@@ -13,10 +13,11 @@
   </nav>
   <nav id="mobileNav" class="" [ngClass]="{open : hamIsX == true}">
     <!-- <div id="menuBtn" onclick="menuAnimation()"> -->
-    <div (click)="openNav_event()" id="menuBtn">
+    <div (click)="navBtnEvent()" id="menuBtn">
       <span class="burger"></span>
     </div>
-    <div id="navOption_holder">
+    <div id="navOption_holder"
+      (click)="navBtnEvent()">
       <ul>
         <li><a routerLink="/">Home</a></li>
         <li><a routerLink="/deals">Deals</a></li>

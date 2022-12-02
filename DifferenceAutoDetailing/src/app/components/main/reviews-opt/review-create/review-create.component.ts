@@ -22,9 +22,11 @@ export class ReviewCreateComponent implements OnInit {
     const value = form.value;
     // const today = new Date();
     const dateNow = Date.now();
+    const newId = (this.reviewService.getMaxId() + 1).toString();
+    console.log(newId);
 
     const newReview = new Review(
-      this.reviewService.getMaxId().toString(),
+      newId,
       value.reviewer,
       value.rating,
       new Date(dateNow).toDateString(),

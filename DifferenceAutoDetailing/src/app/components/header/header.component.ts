@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
     this.hamIsX = false;
   }
 
-  openNav_event(){
+  navBtnEvent(){
     if (this.hamIsX == false){
       this.hamIsX = true;
     }

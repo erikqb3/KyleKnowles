@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"reviews-tab.component.css"}
+{"version":3,"sources":["reviews-tab.component.scss","reviews-tab.component.css"],"names":[],"mappings":"AAAA;EACE;IACE,aAAA;IACA,kBAAA;ECCF;EDAE;IACE,UAAA;IACA,gBAAA;IACA,gBAAA;IACA,gBAAA;ECEJ;EDAE;IACE,UAAA;IACA,gBAAA;IACA,gBAAA;ECEJ;AACF","file":"reviews-tab.component.css"}

@@ -1,1 +1,17 @@
-/*# sourceMappingURL=reviews-tab.component.css.map */
+@media only all and (min-width: 0px) {
+  section {
+    display: flex;
+    position: relative;
+  }
+  section div.reviewTags {
+    width: 30%;
+    min-height: 10vh;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+  section div.reviewDisplay {
+    width: 70%;
+    min-height: 10vh;
+    max-height: 60vh;
+  }
+}/*# sourceMappingURL=reviews-tab.component.css.map */
