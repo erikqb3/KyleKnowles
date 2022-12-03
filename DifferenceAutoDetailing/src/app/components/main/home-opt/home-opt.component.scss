@@ -40,6 +40,9 @@
           height: 30rem;
           width: 20rem;
           border-radius: 10px;
+          display:flex;
+          justify-content:center;
+          align-items: center;
           div.overlay{
             opacity:0;
             position: absolute;
@@ -53,7 +56,7 @@
             h3{
               text-align:center;
               font-weight:200;
-              margin-bottom: 2.5rem;
+              margin-bottom: 1.5rem;
               padding: 0 1rem;
             }
             button{
@@ -62,7 +65,7 @@
               border: 1px solid white;
               border-radius: 10px;
               padding: 0.5rem;
-              margin-bottom: 1rem;
+              margin-bottom: 1.75rem;
               font-weight:200;
               transition: all 0.25s ease-in-out;
             }
@@ -74,12 +77,15 @@
             }
           }
           img{
+            box-sizing:content-box;
             height: 100%;
+            width: 200%;
+            // opacity: 0.5;
           }
         }
         article:hover,
         article:active{
-          box-shadow: 0 0 0 white;
+          box-shadow: 0 0 25px 5px white;
           div.overlay{
             opacity:1;
           }
@@ -105,7 +111,7 @@
         row-gap: 5rem;
         align-items:center;
         justify-content:center;
-        overflow-x:hidden;
+        // overflow-x:hidden;
         width: 100%;
         article{
           position: relative;
@@ -141,7 +147,7 @@
 @media only screen and (min-width: 1200px){
   main {
     div.overlay{
-      overflow-x: hidden;
+      // overflow-x: hidden;
       // padding: 5rem 5vw;
       div.contentHolder{
         // width: 500vw;
@@ -152,7 +158,7 @@
         // row-gap: 5rem;
         align-items:center;
         justify-content:center;
-        overflow-x:hidden;
+        // overflow-x:hidden;
         width: 100%;
         article{
           position: relative;

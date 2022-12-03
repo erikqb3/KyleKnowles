@@ -41,6 +41,9 @@
     height: 30rem;
     width: 20rem;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   main div.overlay div.contentHolder article div.overlay {
     opacity: 0;
@@ -56,7 +59,7 @@
   main div.overlay div.contentHolder article div.overlay h3 {
     text-align: center;
     font-weight: 200;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     padding: 0 1rem;
   }
   main div.overlay div.contentHolder article div.overlay button {
@@ -65,7 +68,7 @@
     border: 1px solid white;
     border-radius: 10px;
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.75rem;
     font-weight: 200;
     transition: all 0.25s ease-in-out;
   }
@@ -76,11 +79,13 @@ main div.overlay div.contentHolder article div.overlay button:active {
     border-color: transparent;
   }
   main div.overlay div.contentHolder article img {
+    box-sizing: content-box;
     height: 100%;
+    width: 200%;
   }
   main div.overlay div.contentHolder article:hover,
 main div.overlay div.contentHolder article:active {
-    box-shadow: 0 0 0 white;
+    box-shadow: 0 0 25px 5px white;
   }
   main div.overlay div.contentHolder article:hover div.overlay,
 main div.overlay div.contentHolder article:active div.overlay {
@@ -104,7 +109,6 @@ main div.overlay div.contentHolder article:active div.overlay {
     row-gap: 5rem;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
     width: 100%;
   }
   main div.overlay div.contentHolder article {
@@ -133,9 +137,6 @@ main div.overlay div.contentHolder article:active div.overlay {
   }
 }
 @media only screen and (min-width: 1200px) {
-  main div.overlay {
-    overflow-x: hidden;
-  }
   main div.overlay div.contentHolder {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -143,7 +144,6 @@ main div.overlay div.contentHolder article:active div.overlay {
          column-gap: 7.5vw;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
     width: 100%;
   }
   main div.overlay div.contentHolder article {

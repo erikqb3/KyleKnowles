@@ -1,8 +1,39 @@
 {
   "Deals":{
-
-  },
-  "Features":[
-    "Thorough"
-  ]
+    "DealsOpt":[
+      {
+        "deal":"Sedan",
+        "type":"DO",
+        "price":120
+      },
+      {
+        "deal":"Truck",
+        "type":"DO",
+        "price":150
+      },
+      {
+        "deal":"SUV",
+        "type":"DO",
+        "price":170
+      },
+      {
+        "deal":"Shampoo/Extraction",
+        "type":"BO",
+        "price":50
+      },
+      {
+        "deal":"Exterior Wash",
+        "type":"BO",
+        "price":60
+      }
+    ],
+    "FeaturesOpt":[
+      "Thorough Vacuuming",
+      "Steam Sanitation",
+      "Complete Surface Cleaning",
+      "Air Sanitation",
+      "UV Plastic Protection",
+      "Leather Cleaning and Conditioning"
+    ]
+  }
 }
