@@ -24,7 +24,7 @@ export class DealsOptComponent implements OnInit, OnDestroy {
           var scrap;
           var scrap2;
           scrap = Object.values(this.deals);
-          this.featuresOpt = scrap[1]
+          // this.featuresOpt = scrap[1]
           console.log(this.deals);
           console.log(scrap2);
 
