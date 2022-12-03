@@ -56,7 +56,7 @@ export class ReviewsOptService {
           (reviews: Review[])=>{
             this.reviews = reviews;
             this.reviewChangedEvent.next(this.reviews.slice());
-            // console.log(this.reviews);
+            console.log(this.reviews);
             // console.log(reviews);
             return this.reviews;
           }

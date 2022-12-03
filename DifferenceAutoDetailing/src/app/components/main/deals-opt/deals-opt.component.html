@@ -42,6 +42,10 @@
         </div>
         <div id="featuresHolder">
           <h2>Features</h2>
+          <app-features 
+            *ngFor="let features_text of featuresOpt"
+            [singleFeature]="features_text">
+          </app-features>
           <!-- <app-features></app-features> -->
           <!-- <ul>
             <li class="dealDetail">Thorough Vacuuming</li>

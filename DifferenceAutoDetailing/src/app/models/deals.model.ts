@@ -8,3 +8,10 @@ export class Deals {
     public FeaturesOpt: string[]
   ){}
 }
+// export class Deals {
+//   constructor(
+//     public deal: string,
+//     public type: string,
+//     public price: number
+//   ){}
+// }

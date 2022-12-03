@@ -20,12 +20,13 @@ export class ReviewsOptComponent implements OnInit, OnDestroy {
       .subscribe(
         (reviewArray: Review[])=> {
           this.reviews = reviewArray;
+          console.log(this.reviews);
         }
       )
   }
 
   ngOnDestroy(): void {
-    this.reviewChangedEvent_sub?.unsubscribe();
+    this.reviewChangedEvent_sub.unsubscribe();
   }
 
 }

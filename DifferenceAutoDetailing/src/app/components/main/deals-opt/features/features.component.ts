@@ -9,11 +9,13 @@ import { DealsService } from 'src/app/services/deals.service';
   styleUrls: ['./features.component.scss']
 })
 export class FeaturesComponent implements OnInit {
-  @Input()deals!: Deals;
+  @Input() singleFeature: string;
   
   constructor() { }
   ngOnInit(): void {
-    // console.log(this.deals)
+    console.log(this.singleFeature)
+    // console.log(this.deals);
+    // console.log(this.featuresOpt);
     
   }
 

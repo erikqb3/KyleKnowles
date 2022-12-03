@@ -7,9 +7,9 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class DealsService {
-  private deals: Deals;
+  private deals: Deals[] = [];
   private fireBase_link: string = "https://kyleknowles-749f3-default-rtdb.firebaseio.com/Deals.json";
-  public dealsChangedEvent = new Subject<Deals>();
+  public dealsChangedEvent = new Subject<Deals[]>();
 
 
   constructor(
@@ -19,11 +19,12 @@ export class DealsService {
 
   getDeals(){
     this.http
-      .get<Deals>(this.fireBase_link)
+      .get<Deals[]>(this.fireBase_link)
         .subscribe(
-          (deals: Deals) => {
+          (deals: Deals[]) => {
             this.deals = deals;
-            console.log(this.deals)
+            this.dealsChangedEvent.next(this.deals);
+            console.log(this.deals);
             return this.deals;
           }
         )
