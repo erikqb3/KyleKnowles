@@ -1,7 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Deals } from 'src/app/models/deals.model';
-import { DealsService } from 'src/app/services/deals.service';
+import { Features } from 'src/app/models/features';
+import { Deals_N_FeaturesService } from 'src/app/services/deals_N_features.service';
 
 @Component({
   selector: 'app-features',
@@ -9,7 +10,7 @@ import { DealsService } from 'src/app/services/deals.service';
   styleUrls: ['./features.component.scss']
 })
 export class FeaturesComponent implements OnInit {
-  @Input() singleFeature: string;
+  @Input() singleFeature: Features;
   
   constructor() { }
   ngOnInit(): void {

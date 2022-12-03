@@ -1,7 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Deals } from 'src/app/models/deals.model';
-import { DealsService } from 'src/app/services/deals.service';
+import { Features } from 'src/app/models/features';
+import { Deals_N_FeaturesService } from 'src/app/services/deals_N_features.service';
 
 @Component({
   selector: 'app-deals-opt',
@@ -10,30 +11,36 @@ import { DealsService } from 'src/app/services/deals.service';
 })
 export class DealsOptComponent implements OnInit, OnDestroy {
   deals: Deals[] = [];
-  featuresOpt: string[];
+  features: Features[] = [];
   dealsChangedEvent_sub: Subscription;
+  featuresChangedEvent_sub: Subscription;
 
-  constructor(private dealsService: DealsService) { }
+  constructor(private d_N_fService: Deals_N_FeaturesService) { }
 
   ngOnInit(): void {
-    this.dealsService.getDeals();
-    this.dealsChangedEvent_sub = this.dealsService.dealsChangedEvent
+    this.d_N_fService.getDeals();
+    this.dealsChangedEvent_sub = this.d_N_fService.dealsChangedEvent
       .subscribe(
         (deals: Deals[]) => {
           this.deals = deals;
-          var scrap;
-          var scrap2;
-          scrap = Object.values(this.deals);
-          // this.featuresOpt = scrap[1]
-          console.log(this.deals);
-          console.log(scrap2);
 
+        }
+      )
+
+
+
+    this.d_N_fService.getFeatures();
+    this.featuresChangedEvent_sub = this.d_N_fService.featuresChangedEvent
+      .subscribe(
+        (features: Features[]) => {
+          this.features = features;
         }
       )
   }
 
   ngOnDestroy(): void {
     this.dealsChangedEvent_sub.unsubscribe;
+    this.featuresChangedEvent_sub.unsubscribe;
   }
 
 }
