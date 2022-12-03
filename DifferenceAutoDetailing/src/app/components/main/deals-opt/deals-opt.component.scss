@@ -22,11 +22,12 @@
       overflow-x:auto;
       padding: 5rem 1rem;
       div.contentHolder{
-        width: 80vw;
+        width: 85vw;
         margin: 0 auto;
         div > h2 {
           text-decoration: underline;
           font-weight:lighter;
+          margin:0;
         }
         div > span {
           font-size: 0.75rem;
@@ -37,19 +38,14 @@
           width: 100%;
           margin: 2.5rem 0;
           h2{
-            margin-bottom: -0.5rem;
+            // margin-bottom: -0.5rem;
           }
-          table{
-            width: 100%;
-            th{
-              padding-top:1rem;
-            }
-            tr{
-              td:nth-child(2){
-                text-align:right;
-              }
-            }
+          h3{
+            font-size: 1rem;
+            margin: 0.5rem 0 -0.25rem 0;
+            font-weight: bolder;
           }
+          
         }
         div#featuresHolder{
           ul{
@@ -118,6 +114,9 @@
         }
         div#dealsHolder{
           margin:0;
+          h3{
+            font-size: 1.75rem;
+          }
           table{
             font-size: 1.5rem;
           }

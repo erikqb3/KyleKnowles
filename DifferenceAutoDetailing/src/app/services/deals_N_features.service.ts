@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Deals } from '../models/deals.model';
 import { Subject } from 'rxjs';
-import { Features } from '../models/features';
+import { Features } from '../models/features.model';
 
 @Injectable({
   providedIn: 'root'
@@ -41,7 +41,7 @@ export class Deals_N_FeaturesService {
         (features: Features[]) => {
           this.features = features;
           this.featuresChangedEvent.next(this.features);
-          console.log(this.features);
+          // console.log(this.features);
           return this.features;
         }
       )

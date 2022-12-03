@@ -1,12 +1,10 @@
 export class Deals {
   constructor(
-    public DealsOpt: {
-      "deal":string,
-      "type":string,
-      "price":number
-    },
-    public FeaturesOpt: string[]
-  ){}
+  public deal: string,
+  public type: string,
+  public price: number,
+  public features_array: string[]
+){}
 }
 // export class Deals {
 //   constructor(

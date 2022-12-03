@@ -21,12 +21,13 @@
     padding: 5rem 1rem;
   }
   main div.overlay div.contentHolder {
-    width: 80vw;
+    width: 85vw;
     margin: 0 auto;
   }
   main div.overlay div.contentHolder div > h2 {
     text-decoration: underline;
     font-weight: lighter;
+    margin: 0;
   }
   main div.overlay div.contentHolder div > span {
     font-size: 0.75rem;
@@ -37,17 +38,10 @@
     width: 100%;
     margin: 2.5rem 0;
   }
-  main div.overlay div.contentHolder div#dealsHolder h2 {
-    margin-bottom: -0.5rem;
-  }
-  main div.overlay div.contentHolder div#dealsHolder table {
-    width: 100%;
-  }
-  main div.overlay div.contentHolder div#dealsHolder table th {
-    padding-top: 1rem;
-  }
-  main div.overlay div.contentHolder div#dealsHolder table tr td:nth-child(2) {
-    text-align: right;
+  main div.overlay div.contentHolder div#dealsHolder h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0 -0.25rem 0;
+    font-weight: bolder;
   }
   main div.overlay div.contentHolder div#featuresHolder ul {
     margin: 0;
@@ -77,6 +71,9 @@
   }
   main div.overlay div.contentHolder div#dealsHolder {
     margin: 0;
+  }
+  main div.overlay div.contentHolder div#dealsHolder h3 {
+    font-size: 1.75rem;
   }
   main div.overlay div.contentHolder div#dealsHolder table {
     font-size: 1.5rem;

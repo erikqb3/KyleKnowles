@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Deals } from 'src/app/models/deals.model';
-import { Features } from 'src/app/models/features';
+import { Features } from 'src/app/models/features.model';
 import { Deals_N_FeaturesService } from 'src/app/services/deals_N_features.service';
 
 @Component({
@@ -23,11 +23,10 @@ export class DealsOptComponent implements OnInit, OnDestroy {
       .subscribe(
         (deals: Deals[]) => {
           this.deals = deals;
+          console.log(this.deals);
 
         }
       )
-
-
 
     this.d_N_fService.getFeatures();
     this.featuresChangedEvent_sub = this.d_N_fService.featuresChangedEvent

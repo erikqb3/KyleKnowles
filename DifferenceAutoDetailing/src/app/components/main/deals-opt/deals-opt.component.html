@@ -10,7 +10,15 @@
       <div class="contentHolder">
         <div id="dealsHolder">
           <h2>Deals</h2>
-          <table>
+          <h3>Deal Options</h3>
+          <app-deals
+            *ngFor="let deals_elements of deals | dealsFilter: 'DO' "
+            [singleDeal]="deals_elements"></app-deals>
+          <h3>Bonus Options</h3>
+          <app-deals
+            *ngFor="let deals_elements of deals | dealsFilter: 'BO' "
+            [singleDeal]="deals_elements"></app-deals>
+          <!-- <table>
             <tr>
               <th>Deal Options</th>
             </tr>
@@ -37,7 +45,7 @@
               <td>Exterior Wash</td>
               <td>$60</td>
             </tr>
-          </table>
+          </table> -->
           <span>Note: Prices depend on condition of vehicle</span>
         </div>
         <div id="featuresHolder">
@@ -46,15 +54,6 @@
             *ngFor="let features_text of features"
             [singleFeature]="features_text">
           </app-features>
-          <!-- <app-features></app-features> -->
-          <!-- <ul>
-            <li class="dealDetail">Thorough Vacuuming</li>
-            <li class="dealDetail">Steam Sanitation</li>
-            <li class="dealDetail">Complete Surface Cleaning</li>
-            <li class="dealDetail">Air Sanitation</li>
-            <li class="dealDetail">UV Plastic Protection</li>
-            <li class="dealDetail">Leather Cleaning and Conditioning</li>
-          </ul> -->
           <span>Note: Features are included in all Deal Options</span>
         </div>
       

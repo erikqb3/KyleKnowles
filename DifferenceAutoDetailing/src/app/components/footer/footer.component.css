@@ -32,17 +32,10 @@
 }
 @media only all and (min-width: 768px) {
   section div.overlay article {
-    width: 60vw;
-  }
-  section div.overlay article p {
-    margin-bottom: 0.25rem;
-  }
-}
-@media only all and (min-width: 992px) {
-  section div.overlay article {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 60vw;
   }
   section div.overlay article p {
     margin-bottom: 0.25rem;

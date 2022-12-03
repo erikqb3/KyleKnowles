@@ -1,62 +1,57 @@
 {
-  "Deals":{
-    "DealsOpt":[
-      {
-        "deal":"Sedan",
-        "type":"DO",
-        "price":120
-      },
-      {
-        "deal":"Truck",
-        "type":"DO",
-        "price":150
-      },
-      {
-        "deal":"SUV",
-        "type":"DO",
-        "price":170
-      },
-      {
-        "deal":"Shampoo/Extraction",
-        "type":"BO",
-        "price":50
-      },
-      {
-        "deal":"Exterior Wash",
-        "type":"BO",
-        "price":60
-      }
-    ],
-    "FeaturesOpt":[
-      "Thorough Vacuuming",
-      "Steam Sanitation",
-      "Complete Surface Cleaning",
-      "Air Sanitation",
-      "UV Plastic Protection",
-      "Leather Cleaning and Conditioning"
-    ]
-  },
+  "Deals": [
+    {
+      "deal":"Sedan",
+      "type":"DO",
+      "price":120
+    },
+    {
+      "deal":"Truck",
+      "type":"DO",
+      "price":150
+    },
+    {
+      "deal":"SUV",
+      "type":"DO",
+      "price":170
+    },
+    {
+      "deal":"Shampoo/Extraction",
+      "type":"BO",
+      "price":50
+    },
+    {
+      "deal":"Exterior Wash",
+      "type":"BO",
+      "price":60
+    }
+  ],
   "Features":[
     {
+      "id" : "0",
       "name": "Thorough Vaccuming"
     },
     {
+      "id" : "1",
       "name": "Steam Sanitation"
     },
     {
+      "id" : "2",
       "name": "Complete Surace Cleaning"
     },
     {
+      "id" : "3",
       "name": "Air Sanitation"
     },
     {
+      "id" : "4",
       "name": "UV Plastic Protection"
     },
     {
+      "id" : "5",
       "name": "Leather Cleaning and Conditioning"
     }
   ],
-
   "Info":{
     "AboutInfo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis, adipisci corporis minima reprehenderit facere quo repudiandae doloribus est accusantium beatae sed provident consectetur nihil porro fugit voluptatem a aliquid praesentium saepe rem. Magni laboriosam inventore placeat animi. Iste molestiae eos aliquam, dignissimos earum itaque magnam sunt similique laboriosam quaerat omnis aperiam maiores id quo quod impedit vero sequi, inventore officia animi placeat!<br>Deserunt dolores sed id quam, nesciunt distinctio dolorum dolore eum vitae provident optio voluptate molestias laboriosam adipisci, ipsum, quidem nobis veritatis quibusdam? Deleniti, maxime. Voluptate debitis temporibus laborum placeat sit quidem explicabo velit quo vero atque dolores dolore nihil odio sunt ipsa doloremque facere, officiis quis cupiditate veniam magnam consequuntur quae. Cupiditate repudiandae commodi eligendi excepturi aut! Laborum facere ea hic molestias, sed soluta, repudiandae ut, deserunt quae eum quam reiciendis?<br>Autem quos, officia suscipit modi corrupti similique quia corporis dolorum totam ad, sit nesciunt! Autem, minus.",
     "ContactInfo": {

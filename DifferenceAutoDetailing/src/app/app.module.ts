@@ -11,10 +11,14 @@ import { MainComponent } from './components/main/main.component';
 import { AboutOptComponent } from './components/main/about-opt/about-opt.component';
 import { ContactOptComponent } from './components/main/contact-opt/contact-opt.component';
 import { HomeOptComponent } from './components/main/home-opt/home-opt.component';
+import { HomeOptSingleComponent } from './components/main/home-opt/home-opt-single/home-opt-single.component';
 import { ReviewsOptComponent } from './components/main/reviews-opt/reviews-opt.component';
 import { ReviewCreateComponent } from './components/main/reviews-opt/review-create/review-create.component'
 import { SingleReviewComponent } from './components/main/reviews-opt/singleReview/single-review.component';
 import { DealsOptComponent } from './components/main/deals-opt/deals-opt.component';
+import { DealsComponent } from './components/main/deals-opt/deals/deals.component';
+import { FeaturesComponent } from './components/main/deals-opt/features/features.component';
+import { DealsFilterPipe } from './components/main/deals-opt/deals-filter.pipe';
 
 import { OwnerComponent } from './components/owner/owner.component';
 import { InfoTabComponent } from './components/owner/info-tab/info-tab.component';
@@ -27,9 +31,6 @@ import { TabsComponent } from './components/owner/tabs/tabs.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from "@angular/common/http";
-import { HomeOptSingleComponent } from './components/main/home-opt/home-opt-single/home-opt-single.component';
-import { DealsComponent } from './components/main/deals-opt/deals/deals.component';
-import { FeaturesComponent } from './components/main/deals-opt/features/features.component';
 
 
 
@@ -57,6 +58,7 @@ import { FeaturesComponent } from './components/main/deals-opt/features/features
     HomeOptSingleComponent,
     DealsComponent,
     FeaturesComponent,
+    DealsFilterPipe,
   ],
   imports: [
     BrowserModule,
