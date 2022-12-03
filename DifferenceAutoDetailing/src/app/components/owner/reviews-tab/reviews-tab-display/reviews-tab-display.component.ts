@@ -24,6 +24,7 @@ export class ReviewsTabDisplayComponent implements OnInit {
         (params: Params) => {
           this.id = params['id'];
           this.review = this.reviewService.getReview(this.id);
+          console.log(this.review);
         }
       )
   }

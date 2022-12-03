@@ -10,7 +10,7 @@ import { ReviewsOptService } from 'src/app/services/reviews.service'
 })
 export class ReviewsOptComponent implements OnInit, OnDestroy {
   reviews: Review[] = [];
-  reviewChangedEvent_sub?: Subscription;
+  reviewChangedEvent_sub: Subscription;
 
   constructor(private reviewService: ReviewsOptService) { }
 

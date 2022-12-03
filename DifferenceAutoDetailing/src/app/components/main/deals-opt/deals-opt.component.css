@@ -49,7 +49,7 @@
   main div.overlay div.contentHolder div#dealsHolder table tr td:nth-child(2) {
     text-align: right;
   }
-  main div.overlay div.contentHolder div#details4deals ul {
+  main div.overlay div.contentHolder div#featuresHolder ul {
     margin: 0;
   }
   main div.overlay div.contentHolder div {
@@ -81,11 +81,11 @@
   main div.overlay div.contentHolder div#dealsHolder table {
     font-size: 1.5rem;
   }
-  main div.overlay div.contentHolder div#details4deals ul {
+  main div.overlay div.contentHolder div#featuresHolder ul {
     font-size: 1.5rem;
   }
   main div.overlay div.contentHolder div#dealsHolder,
-main div.overlay div.contentHolder div#details4deals {
+main div.overlay div.contentHolder div#featuresHolder {
     width: 0%;
   }
 }
@@ -94,7 +94,7 @@ main div.overlay div.contentHolder div#details4deals {
     width: 80vw;
   }
   main div.overlay div.contentHolder div#dealsHolder,
-main div.overlay div.contentHolder div#details4deals {
+main div.overlay div.contentHolder div#featuresHolder {
     width: 40%;
   }
 }/*# sourceMappingURL=deals-opt.component.css.map */

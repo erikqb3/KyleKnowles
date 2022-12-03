@@ -27,8 +27,9 @@ import { TabsComponent } from './components/owner/tabs/tabs.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from "@angular/common/http";
-import { SingleReviewOwnerComponent } from './src/app/components/owner/reviews-tab/singleReview_owner/single-review-owner/single-review-owner.component';
 import { HomeOptSingleComponent } from './components/main/home-opt/home-opt-single/home-opt-single.component';
+import { DealsComponent } from './components/main/deals-opt/deals/deals.component';
+import { FeaturesComponent } from './components/main/deals-opt/features/features.component';
 
 
 
@@ -51,10 +52,11 @@ import { HomeOptSingleComponent } from './components/main/home-opt/home-opt-sing
     DealsTabComponent,
     SingleReviewComponent,
     ReviewCreateComponent,
-    SingleReviewOwnerComponent,
     ReviewsTabSingleReviewComponent,
     ReviewsTabDisplayComponent,
     HomeOptSingleComponent,
+    DealsComponent,
+    FeaturesComponent,
   ],
   imports: [
     BrowserModule,

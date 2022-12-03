@@ -27,7 +27,6 @@ import { TabsComponent } from './components/owner/tabs/tabs.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from "@angular/common/http";
-import { SingleReviewOwnerComponent } from './src/app/components/owner/reviews-tab/singleReview_owner/single-review-owner/single-review-owner.component';
 
 
 const appRoutes: Routes = [
