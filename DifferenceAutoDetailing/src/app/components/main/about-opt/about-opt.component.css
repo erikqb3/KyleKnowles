@@ -8,6 +8,8 @@
   div.topBanner .overlay {
     padding: 25vh 0;
     display: block;
+    height: 100vh;
+    overflow-y: auto;
     color: white;
   }
   div.topBanner .overlay h1 {
@@ -15,12 +17,31 @@
   }
   div.topBanner .overlay div#bio {
     width: 80%;
-    margin: 0 auto;
+    margin: -7rem auto 0 auto;
     font-family: "Times New Roman", Times, serif;
     font-size: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 7.5rem 1rem 1rem 1rem;
+    border-radius: 15px;
+  }
+  div.topBanner .overlay::-webkit-scrollbar {
+    display: none;
   }
   main {
     background: rgb(97, 102, 116);
     background: radial-gradient(circle, rgb(97, 102, 116) 0%, rgb(0, 0, 10) 50%);
+  }
+}
+@media only screen and (min-width: 786px) {
+  div.topBanner .overlay {
+    overflow: initial;
+  }
+}
+@media only screen and (min-width: 992px) {
+  div.topBanner .overlay div#bio {
+    width: 80%;
+    margin: -9rem auto 0 auto;
+    font-family: "Times New Roman", Times, serif;
+    padding: 9rem 1rem 1rem 1rem;
   }
 }/*# sourceMappingURL=about-opt.component.css.map */

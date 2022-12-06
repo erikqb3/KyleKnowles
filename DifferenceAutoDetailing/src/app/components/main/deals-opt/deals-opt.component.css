@@ -19,6 +19,7 @@
     background-color: rgba(0, 0, 0, 0.75);
     overflow-x: auto;
     padding: 5rem 1rem;
+    color: White;
   }
   main div.overlay div.contentHolder {
     width: 85vw;
@@ -56,11 +57,17 @@
   main div.overlay div.contentHolder {
     width: 60vw;
   }
+  main div.overlay div.contentHolder div > h2 {
+    font-size: 3rem;
+  }
+  main div.overlay div.contentHolder div#dealsHolder h2 {
+    font-size: 2rem;
+  }
+  main div.overlay div.contentHolder div#dealsHolder h3 {
+    font-size: 1.25rem;
+  }
 }
 @media only all and (min-width: 992px) {
-  div.topBanner {
-    background-image: url("../../../../assets/imgs/FacebookPhotos/296075189_123561447074202_2464407663475818852_n.jpg");
-  }
   main div.overlay div.contentHolder {
     display: flex;
     justify-content: space-evenly;
@@ -83,7 +90,7 @@
   }
   main div.overlay div.contentHolder div#dealsHolder,
 main div.overlay div.contentHolder div#featuresHolder {
-    width: 0%;
+    width: 40%;
   }
 }
 @media only all and (min-width: 1200px) {

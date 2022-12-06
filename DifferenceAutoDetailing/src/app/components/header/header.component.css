@@ -73,14 +73,29 @@ header nav#mobileNav div#menuBtn .burger::after {
   }
   header nav#mobileNav div#navOption_holder {
     width: 100%;
-    height: 0vh;
+    height: 100vh;
     position: relative;
-    bottom: 0%;
-    top: 100%;
+    bottom: -100vh;
+    transition: all 0.65s ease-in-out;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   header nav#mobileNav div#navOption_holder ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+  header nav#mobileNav div#navOption_holder ul li {
+    margin: 1rem;
+  }
+  header nav#mobileNav div#navOption_holder ul li a:link,
+header nav#mobileNav div#navOption_holder ul li a:visited {
+    color: white;
+    text-decoration: none;
   }
   header nav#mobileNav.open {
     height: 100%;
@@ -98,7 +113,7 @@ header nav#mobileNav div#menuBtn .burger::after {
   header nav#mobileNav.open div#navOption_holder {
     background-color: rgba(0, 0, 0, 0.75);
     height: 100vh;
-    top: 0;
+    bottom: 0vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -112,12 +127,27 @@ header nav#mobileNav div#menuBtn .burger::after {
   }
   header nav#mobileNav.open div#navOption_holder ul li {
     margin: 1rem;
-    font-family: Georgia, "Times New Roman", Times, serif;
   }
   header nav#mobileNav.open div#navOption_holder ul li a:link,
 header nav#mobileNav.open div#navOption_holder ul li a:visited {
     color: white;
     text-decoration: none;
+  }
+  @-webkit-keyframes slideUp {
+    from {
+      bottom: -100vh;
+    }
+    to {
+      bottom: 0vh;
+    }
+  }
+  @keyframes slideUp {
+    from {
+      bottom: -100vh;
+    }
+    to {
+      bottom: 0vh;
+    }
   }
 }
 @media only screen and (min-width: 992px) {
@@ -146,7 +176,6 @@ header nav#mobileNav.open div#navOption_holder ul li a:visited {
     list-style: none;
   }
   header nav#mainNav ul li {
-    font-family: "Times New Roman", Times, serif;
     font-weight: lighter;
     font-size: 1.5rem;
   }

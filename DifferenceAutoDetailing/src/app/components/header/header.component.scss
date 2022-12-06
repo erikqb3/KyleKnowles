@@ -74,13 +74,32 @@
     }
     div#navOption_holder{
       width: 100%;
-      height:0vh;
+      height:100vh;
       position: relative;
-      bottom:0%;
-      top:100%;
+      bottom:-100vh;
+      // top:100%;
+      transition:all 0.65s ease-in-out;
+      
       display:flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
       ul{
-        display:none;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        // margin-top: -2.5rem;
+        li{
+          margin:1rem;
+          // font-family:Georgia, 'Times New Roman', Times, serif;
+          a:link,
+          a:visited{
+            color:white;
+            text-decoration: none;
+          }
+        }
       }
     }
     }
@@ -110,10 +129,16 @@
     div#navOption_holder{
       background-color: rgba(0,0,0,0.75);
       height: 100vh;
-      top:0;
+      // top:0;
+      bottom: 0vh;
       flex-direction:column;
       align-items: center;
       justify-content: center;
+      // animation-name:slideUp;
+      // animation-duration: 0.75s;
+      // animation-fill-mode:both;
+      // animation-direction: alternate;
+      
       ul{
         // z-index:1;
         // top:0;
@@ -127,7 +152,7 @@
         // margin-top: -2.5rem;
         li{
           margin:1rem;
-          font-family:Georgia, 'Times New Roman', Times, serif;
+          // font-family:Georgia, 'Times New Roman', Times, serif;
           a:link,
           a:visited{
             color:white;
@@ -135,6 +160,10 @@
           }
         }
       }
+    }
+    @keyframes slideUp {
+      from { bottom: -100vh}
+      to { bottom: 0vh }
     }
     }
   }
@@ -189,7 +218,7 @@
         justify-content: space-evenly;
         list-style: none;
         li{
-          font-family:'Times New Roman', Times, serif;
+          // font-family:'Times New Roman', Times, serif;
           font-weight:lighter;
           font-size: 1.5rem;
           a:link,

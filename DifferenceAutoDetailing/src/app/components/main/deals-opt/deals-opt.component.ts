@@ -11,8 +11,8 @@ import { Deals_N_FeaturesService } from 'src/app/services/deals_N_features.servi
 })
 export class DealsOptComponent implements OnInit, OnDestroy {
   deals: Deals[] = [];
-  features: Features[] = [];
   dealsChangedEvent_sub: Subscription;
+  features: Features[] = [];
   featuresChangedEvent_sub: Subscription;
 
   constructor(private d_N_fService: Deals_N_FeaturesService) { }

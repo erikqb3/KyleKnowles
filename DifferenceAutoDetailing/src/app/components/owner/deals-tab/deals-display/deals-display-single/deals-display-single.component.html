@@ -1,0 +1,36 @@
+<div class="row">
+  <div>
+    <select
+      id="type"
+      name="type"
+      *ngIf=" singleDeal.type  == 'Deal Option'; else BonusOption">
+      <option value="Deal Option" selected>Deal Option</option>
+      <option value="Bonus Option">Bonus Option</option>
+    </select>
+    <ng-template #BonusOption>
+      <select
+      id="type"
+      name="type">
+      <option value="Deal Option">Deal Option</option>
+      <option value="Bonus Option" selected>Bonus Option</option>
+      </select>
+    </ng-template>
+    </div>
+  <div>
+    <input 
+      id="deal"
+      name="deal"
+      value="{{ singleDeal.deal }}">
+  </div>
+  <div>
+    <input 
+    id="price"
+    name="price"
+    type="number"
+    min="0"
+    value="{{ singleDeal.price }}">
+  </div>
+  <div>
+    <button>Delete</button>
+  </div>
+</div>

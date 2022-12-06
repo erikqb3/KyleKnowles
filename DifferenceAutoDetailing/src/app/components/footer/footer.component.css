@@ -3,6 +3,7 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    height: 45vh;
     background: rgb(133, 142, 164);
     background: radial-gradient(circle, rgb(133, 142, 164) 0%, rgb(0, 0, 10) 50%);
   }

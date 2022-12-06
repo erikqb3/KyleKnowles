@@ -9,43 +9,15 @@
     <div class="overlay">
       <div class="contentHolder">
         <div id="dealsHolder">
-          <h2>Deals</h2>
+          <h2>Options</h2>
           <h3>Deal Options</h3>
           <app-deals
-            *ngFor="let deals_elements of deals | dealsFilter: 'DO' "
+            *ngFor="let deals_elements of deals | dealsFilter: 'Deal Option' "
             [singleDeal]="deals_elements"></app-deals>
           <h3>Bonus Options</h3>
           <app-deals
-            *ngFor="let deals_elements of deals | dealsFilter: 'BO' "
+            *ngFor="let deals_elements of deals | dealsFilter: 'Bonus Option' "
             [singleDeal]="deals_elements"></app-deals>
-          <!-- <table>
-            <tr>
-              <th>Deal Options</th>
-            </tr>
-            <tr class="dealOption">
-              <td>Sedan Size</td>
-              <td>$120</td>
-            </tr>
-            <tr class="dealOption">
-              <td>Truck Size</td>
-              <td>$150</td>
-            </tr>
-            <tr class="dealOption">
-              <td>SUV Size</td>
-              <td>$170</td>
-            </tr>
-            <tr>
-              <th>Bonus Options</th>
-            </tr>
-            <tr class="dealOption">
-              <td>Shampoo/Extraction</td>
-              <td>$50</td>
-            </tr>
-            <tr class="dealOption">
-              <td>Exterior Wash</td>
-              <td>$60</td>
-            </tr>
-          </table> -->
           <span>Note: Prices depend on condition of vehicle</span>
         </div>
         <div id="featuresHolder">

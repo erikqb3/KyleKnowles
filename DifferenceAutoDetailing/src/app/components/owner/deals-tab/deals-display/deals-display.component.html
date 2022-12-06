@@ -1,0 +1,11 @@
+<section>
+  <app-deals-display-single
+    *ngFor="let singleObject of deals"
+    [singleDeal]="singleObject"
+  ></app-deals-display-single>
+  <div>
+    <button>Add Option</button>
+    <button>Commit Changes</button>
+  </div>
+</section>
+

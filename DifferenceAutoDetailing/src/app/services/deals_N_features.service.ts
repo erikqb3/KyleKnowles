@@ -28,7 +28,7 @@ export class Deals_N_FeaturesService {
           (deals: Deals[]) => {
             this.deals = deals;
             this.dealsChangedEvent.next(this.deals);
-            console.log(this.deals);
+            // console.log(this.deals);
             return this.deals;
           }
         )

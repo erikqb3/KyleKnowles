@@ -27,7 +27,9 @@
     position:relative;
     h1{
       font-size: 4rem;
-      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-weight:lighter;
+      // font-family:Georgia, 'Times New Roman', Times, serif;
+      color:white;
     }
     p{}
   }
@@ -39,9 +41,9 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    :nth-child(1){
-      color:white;
-    }
+    // :nth-child(1){
+    //   color:white;
+    // }
   }
 
 

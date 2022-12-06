@@ -1,1 +1,19 @@
-/*# sourceMappingURL=deals-tab.component.css.map */
+@media only all and (min-width: 0) {
+  section {
+    display: flex;
+    width: 100%;
+  }
+  section div#tagContainer {
+    height: 26rem;
+    width: 20%;
+  }
+  section div#displayContainer {
+    height: 26rem;
+    width: 80%;
+  }
+}
+@media only all and (min-width: 992px) {
+  li {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=deals-tab.component.css.map */

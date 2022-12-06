@@ -25,7 +25,8 @@
   }
   div.topBanner h1 {
     font-size: 4rem;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: lighter;
+    color: white;
   }
   .overlay {
     width: 100%;
@@ -35,9 +36,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .overlay :nth-child(1) {
-    color: white;
   }
 }
 @media only all and (min-width: 768px) {

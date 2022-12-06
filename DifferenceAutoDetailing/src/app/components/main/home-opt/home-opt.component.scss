@@ -2,6 +2,14 @@
   div.topBanner{
     background-image: url('../../../../assets/imgs/HomePhoto3.jpg');
     .overlay{
+      color:white;
+      // align-items: flex-end;
+      p{
+        font-size:2rem;
+        text-align:center;
+        font-weight: lighter;
+        // margin-bottom: 5rem;
+      }
     }
     div.bannerImgHolder{
       height: 100%;
@@ -58,6 +66,7 @@
               font-weight:200;
               margin-bottom: 1.5rem;
               padding: 0 1rem;
+              color:white;
             }
             button{
               background:transparent;
@@ -92,6 +101,9 @@
         }
       }
     }
+    div.overlay::-webkit-scrollbar{
+      display:none;
+    }
     img {
       position:relative;
       width: 100%;
@@ -100,6 +112,17 @@
   
 }
 @media only screen and (min-width: 786px){
+  div.topBanner{
+    .overlay{
+      p{
+        font-size: 3rem;
+      }
+    }
+    div.bannerImgHolder{
+      img{
+      }
+    }
+  }
   main {
     div.overlay{
       overflow-x: hidden;

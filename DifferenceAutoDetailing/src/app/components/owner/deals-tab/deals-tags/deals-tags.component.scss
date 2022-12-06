@@ -1,17 +1,13 @@
 @media only all and (min-width:0){
   section{
-    display:flex;
     width: 100%;
-    app-deals-tag{
-      
-    }
-    div#tagContainer{
-      height:26rem;
-      width: 20%;
-    }
-    div#displayContainer{
-      height: 26rem;
-      width: 80%;
+    height: 100%;
+    display:block;
+    background-color:red;
+    button{
+      height: 50%;
+      width: 100%;
+      border: none;
     }
   }
   }
@@ -19,9 +15,6 @@
   
   }
   @media only all and (min-width: 992px){
-    li {
-      font-size: 1.5rem;
-    }
   }
   @media only all and (min-width: 1200px) {
   
