@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { range } from 'rxjs';
 import { Review } from 'src/app/models/review.model';
-import { ReviewsOptService } from 'src/app/services/reviews.service';
+import { ReviewsService } from 'src/app/services/reviews.service';
 
 @Component({
   selector: 'app-single-review',
@@ -13,7 +13,7 @@ export class SingleReviewComponent implements OnInit {
 
   
   constructor(
-    private reviewService: ReviewsOptService
+    private reviewService: ReviewsService
   ) { }
 
   ngOnInit(): void {

@@ -30,6 +30,10 @@
     font-weight: lighter;
     margin-bottom: 0.5rem;
   }
+  section div.overlay article p a:link,
+section div.overlay article p a:visited {
+    color: white;
+  }
 }
 @media only all and (min-width: 768px) {
   section div.overlay article {

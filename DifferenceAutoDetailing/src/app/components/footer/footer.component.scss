@@ -47,6 +47,10 @@
         p {
           font-weight: lighter;
           margin-bottom: 0.5rem;
+          a:link,
+          a:visited{
+            color:white;
+          }
         }
       }
     }

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Review } from 'src/app/models/review.model';
-import { ReviewsOptService } from 'src/app/services/reviews.service';
+import { ReviewsService } from 'src/app/services/reviews.service';
 
 @Component({
   selector: 'app-reviews-tab-single-review',
@@ -13,7 +13,7 @@ export class ReviewsTabSingleReviewComponent implements OnInit {
 @Output() reviewTagSelected = new EventEmitter<void>();
 
   constructor(
-    private reviewService: ReviewsOptService
+    private reviewService: ReviewsService
   ) { }
 
   ngOnInit(): void {

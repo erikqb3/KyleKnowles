@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Review } from '../../../../models/review.model';
-import { ReviewsOptService } from 'src/app/services/reviews.service';
+import { ReviewsService } from 'src/app/services/reviews.service';
 
 @Component({
   selector: 'app-review-create',
@@ -12,7 +12,7 @@ export class ReviewCreateComponent implements OnInit {
   review!: Review;
 
   constructor(
-    private reviewService: ReviewsOptService
+    private reviewService: ReviewsService
   ) { }
 
   ngOnInit(): void {

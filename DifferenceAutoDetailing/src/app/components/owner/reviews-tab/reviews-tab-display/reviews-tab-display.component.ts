@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Review } from 'src/app/models/review.model';
-import { ReviewsOptService } from 'src/app/services/reviews.service';
+import { ReviewsService } from 'src/app/services/reviews.service';
 
 @Component({
   selector: 'app-reviews-tab-display',
@@ -12,7 +12,7 @@ export class ReviewsTabDisplayComponent implements OnInit {
   id: string;
   review: Review;
 
-  constructor(private reviewService: ReviewsOptService,
+  constructor(private reviewService: ReviewsService,
               private router: Router,
               private route: ActivatedRoute
 

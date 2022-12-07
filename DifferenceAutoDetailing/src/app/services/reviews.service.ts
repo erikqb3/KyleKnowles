@@ -7,7 +7,7 @@ import { Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ReviewsOptService {
+export class ReviewsService {
   // deleteReview(review: Review) {
   //   throw new Error('Method not implemented.');
   // }

@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Review } from '../../../models/review.model';
-import { ReviewsOptService } from '../../../services/reviews.service';
+import { ReviewsService } from '../../../services/reviews.service';
 
 @Component({
   selector: 'app-reviews-tab',
@@ -14,7 +14,7 @@ export class ReviewsTabComponent implements OnInit, OnDestroy {
   reviewChangedEvent_sub?: Subscription;
   reviewSelectedEvent_sub?: Subscription;
 
-  constructor(private reviewService: ReviewsOptService) { }
+  constructor(private reviewService: ReviewsService) { }
 
   ngOnInit(): void {
     this.reviewService.getReviews();
