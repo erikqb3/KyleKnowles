@@ -1,128 +1,192 @@
 {
-  "Photo":{
-    "BackgroundPhotos" : [
-      {
-        "id":0,
-        "page":"home",
-        "type":"hero",
-        "alt":"homePic_sm",
-        "path":""
-      },
-      {
-        "id":1,
-        "page":"home",
-        "type":"secondary",
-        "alt":"homePic_lg",
-        "path":""
-      },
-      {
-        "id":2,
-        "page":"deals",
-        "type":"hero",
-        "alt":"servicesPic_sm",
-        "path":""
-      },
-      {
-        "id":3,
-        "page":"services",
-        "type":"secondary",
-        "alt":"servicesPic_lg",
-        "path":""
-      },
-      {
-        "id":4,
-        "page":"reviews",
-        "type":"hero",
-        "alt":"reviewsPic_sm",
-        "path":""
-      },
-      {
-        "id":5,
-        "page":"reviews",
-        "type":"secondary",
-        "alt":"reviewsPic_lg",
-        "path":""
-      },
-      {
-        "id":6,
-        "page":"about",
-        "type":"hero",
-        "alt":"aboutPic_sm",
-        "path":""
-      },
-      {
-        "id":7,
-        "page":"about",
-        "type":"secondary",
-        "alt":"aboutPic_lg",
-        "path":""
-      },
-      {
-        "id":8,
-        "page":"contact",
-        "type":"hero",
-        "alt":"contactPic_sm",
-        "path":""
-      },
-      {
-        "id":9,
-        "page":"contact",
-        "type":"secondary",
-        "alt":"contactPic_lg",
-        "path":""
-      }
-      
-    ],
-    "portfolioPhotos" : [
-      {
-        "id":0,
-        "label":"Thorough Vaccuming",
-        "beforePic":"src",
-        "afterPic":"src"
-      },
-      {
-        "id":1,
-        "label":"Steam Sanitation",
-        "beforePic":"src",
-        "afterPic":"src"
-      },
-      {
-        "id":2,
-        "label":"Complete Surface Cleaning",
-        "beforePic":"src",
-        "afterPic":"src"
-      },
-      {
-        "id":3,
-        "label":"Air Sanitation",
-        "beforePic":"src",
-        "afterPic":"src"
-      },
-      {
-        "id":4,
-        "label":"UV Plastic Protection",
-        "beforePic":"src",
-        "afterPic":"src"
-      },
-      {
-        "id":5,
-        "label":"Leather Cleaning and Conditioning",
-        "beforePic":"src",
-        "afterPic":"src"
-      },
-      {
-        "id":6,
-        "label":"Shampoo/Extraction",
-        "beforePic":"src",
-        "afterPic":"src"
-      },
-      {
-        "id":7,
-        "label":"Exterior Wash",
-        "beforePic":"src",
-        "afterPic":"src"
-      }
-    ]
-  }
+  "Photo":[
+    {
+      "page":"Home",
+      "category":"Background",
+      "type":"hero",
+      "alt":"homePic_sm",
+      "path":""
+    },
+    {
+      "page":"Home",
+      "category":"Background",
+      "type":"secondary",
+      "alt":"homePic_lg",
+      "path":""
+    },
+    {
+      "page":"Deals",
+      "category":"Background",
+      "type":"hero",
+      "alt":"servicesPic_sm",
+      "path":""
+    },
+    {
+      "page":"Deals",
+      "category":"Background",
+      "type":"hero",
+      "alt":"servicesPic_sm",
+      "path":""
+    },
+    {
+      "page":"Reviews",
+      "category":"Background",
+      "type":"hero",
+      "alt":"reviewsPic_sm",
+      "path":""
+    },
+    {
+      "page":"Reviews",
+      "category":"Background",
+      "type":"secondary",
+      "alt":"reviewsPic_lg",
+      "path":""
+    },
+    {
+      "page":"About",
+      "category":"Background",
+      "type":"hero",
+      "alt":"aboutPic_sm",
+      "path":""
+    },
+    {
+      "page":"About",
+      "category":"Background",
+      "type":"secondary",
+      "alt":"aboutPic_lg",
+      "path":""
+    },
+    {
+      "page":"Contact",
+      "category":"Background",
+      "type":"hero",
+      "alt":"contactPic_sm",
+      "path":""
+    },
+    {
+      "page":"Contact",
+      "category":"Background",
+      "type":"secondary",
+      "alt":"contactPic_lg",
+      "path":""
+    },
+
+
+
+
+
+    {
+      "page":"Portfolio",
+      "category":"Thorough Vaccuming",
+      "type":"before",
+      "alt":"homePic_sm",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Thorough Vaccuming",
+      "type":"after",
+      "alt":"homePic_lg",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Steam Sanitation",
+      "type":"before",
+      "alt":"servicesPic_sm",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Steam Sanitation",
+      "type":"after",
+      "alt":"servicesPic_lg",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Complete Surface Cleaning",
+      "type":"hero",
+      "alt":"reviewsPic_sm",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Complete Surface Cleaning",
+      "type":"secondary",
+      "alt":"reviewsPic_lg",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Air Sanitation",
+      "type":"before",
+      "alt":"aboutPic_sm",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Air Sanitation",
+      "type":"after",
+      "alt":"aboutPic_lg",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"UV Plastic Protection",
+      "type":"before",
+      "alt":"contactPic_sm",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"UV Plastic Protection",
+      "type":"after",
+      "alt":"contactPic_lg",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Leather Cleaning and Conditioning",
+      "type":"before",
+      "alt":"homePic_sm",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Leather Cleaning and Conditioning",
+      "type":"after",
+      "alt":"homePic_lg",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Shampoo/Extraction",
+      "type":"before",
+      "alt":"servicesPic_sm",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Shampoo/Extraction",
+      "type":"after",
+      "alt":"servicesPic_lg",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Exterior Wash",
+      "type":"before",
+      "alt":"reviewsPic_sm",
+      "path":""
+    },
+    {
+      "page":"Portfolio",
+      "category":"Exterior Wash",
+      "type":"after",
+      "alt":"reviewsPic_lg",
+      "path":""
+    }
+  ]
 }
 

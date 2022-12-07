@@ -28,31 +28,32 @@
   ],
   "Features":[
     {
-      "id" : "0",
       "name": "Thorough Vaccuming"
     },
     {
-      "id" : "1",
       "name": "Steam Sanitation"
     },
     {
-      "id" : "2",
       "name": "Complete Surace Cleaning"
     },
     {
-      "id" : "3",
       "name": "Air Sanitation"
     },
     {
-      "id" : "4",
       "name": "UV Plastic Protection"
     },
     {
-      "id" : "5",
       "name": "Leather Cleaning and Conditioning"
     }
   ],
-  "Info":{
+  "Contact": {
+    "name":"Kyle Knowles",
+    "phone":"661-585-7302",
+    "email":"kylejk13@gmail.com",
+    "address":"2727 N 4000 Rd W, Rexburg ID 83440, United States",
+    "facebook":"facebook.com"
+  },
+  "Copy":{
     "AboutInfo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis, adipisci corporis minima reprehenderit facere quo repudiandae doloribus est accusantium beatae sed provident consectetur nihil porro fugit voluptatem a aliquid praesentium saepe rem. Magni laboriosam inventore placeat animi. Iste molestiae eos aliquam, dignissimos earum itaque magnam sunt similique laboriosam quaerat omnis aperiam maiores id quo quod impedit vero sequi, inventore officia animi placeat!<br>Deserunt dolores sed id quam, nesciunt distinctio dolorum dolore eum vitae provident optio voluptate molestias laboriosam adipisci, ipsum, quidem nobis veritatis quibusdam? Deleniti, maxime. Voluptate debitis temporibus laborum placeat sit quidem explicabo velit quo vero atque dolores dolore nihil odio sunt ipsa doloremque facere, officiis quis cupiditate veniam magnam consequuntur quae. Cupiditate repudiandae commodi eligendi excepturi aut! Laborum facere ea hic molestias, sed soluta, repudiandae ut, deserunt quae eum quam reiciendis?<br>Autem quos, officia suscipit modi corrupti similique quia corporis dolorum totam ad, sit nesciunt! Autem, minus.",
     "ContactInfo": {
       "Name":"Kyle Knowles",
@@ -70,70 +71,60 @@
   "Photo":{
     "BackgroundPhotos" : [
       {
-        "id":0,
         "page":"home",
         "type":"hero",
         "alt":"homePic_sm",
         "path":""
       },
       {
-        "id":1,
         "page":"home",
         "type":"secondary",
         "alt":"homePic_lg",
         "path":""
       },
       {
-        "id":2,
         "page":"deals",
         "type":"hero",
         "alt":"servicesPic_sm",
         "path":""
       },
       {
-        "id":3,
         "page":"services",
         "type":"secondary",
         "alt":"servicesPic_lg",
         "path":""
       },
       {
-        "id":4,
         "page":"reviews",
         "type":"hero",
         "alt":"reviewsPic_sm",
         "path":""
       },
       {
-        "id":5,
         "page":"reviews",
         "type":"secondary",
         "alt":"reviewsPic_lg",
         "path":""
       },
       {
-        "id":6,
         "page":"about",
         "type":"hero",
         "alt":"aboutPic_sm",
         "path":""
       },
       {
-        "id":7,
         "page":"about",
         "type":"secondary",
         "alt":"aboutPic_lg",
         "path":""
       },
       {
-        "id":8,
         "page":"contact",
         "type":"hero",
         "alt":"contactPic_sm",
         "path":""
       },
       {
-        "id":9,
         "page":"contact",
         "type":"secondary",
         "alt":"contactPic_lg",
@@ -143,49 +134,41 @@
     ],
     "portfolioPhotos" : [
       {
-        "id":0,
         "label":"Thorough Vaccuming",
         "beforePic":"src",
         "afterPic":"src"
       },
       {
-        "id":1,
         "label":"Steam Sanitation",
         "beforePic":"src",
         "afterPic":"src"
       },
       {
-        "id":2,
         "label":"Complete Surface Cleaning",
         "beforePic":"src",
         "afterPic":"src"
       },
       {
-        "id":3,
         "label":"Air Sanitation",
         "beforePic":"src",
         "afterPic":"src"
       },
       {
-        "id":4,
         "label":"UV Plastic Protection",
         "beforePic":"src",
         "afterPic":"src"
       },
       {
-        "id":5,
         "label":"Leather Cleaning and Conditioning",
         "beforePic":"src",
         "afterPic":"src"
       },
       {
-        "id":6,
         "label":"Shampoo/Extraction",
         "beforePic":"src",
         "afterPic":"src"
       },
       {
-        "id":7,
         "label":"Exterior Wash",
         "beforePic":"src",
         "afterPic":"src"
@@ -194,7 +177,6 @@
   },
   "Reviews":[
     {
-      "id":0,
       "reviewer":"Kobe",
       "rating":5,
       "starCount": "⭐⭐⭐⭐⭐",
@@ -202,7 +184,6 @@
       "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
     },
     {
-      "id":1,
       "reviewer":"Lloyd",
       "rating":3,
       "starCount": "⭐⭐⭐",
@@ -210,7 +191,6 @@
       "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
     },
     {
-      "id":2,
       "reviewer":"Sabrina",
       "rating":4,
       "starCount": "⭐⭐⭐⭐",
@@ -218,7 +198,6 @@
       "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
     },
     {
-      "id":3,
       "reviewer":"Lyle",
       "rating":5,
       "starCount": "⭐⭐⭐⭐⭐",
@@ -226,7 +205,6 @@
       "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
     },
     {
-      "id":4,
       "reviewer":"Kolton",
       "rating":5,
       "starCount": "⭐⭐⭐⭐⭐",
@@ -234,7 +212,6 @@
       "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
     },
     {
-      "id":5,
       "reviewer":"Taylor",
       "rating":5,
       "starCount": "⭐⭐⭐⭐⭐",
@@ -242,7 +219,6 @@
       "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
     },
     {
-      "id":6,
       "reviewer":"Bronson",
       "rating":4,
       "starCount": "⭐⭐⭐⭐",
@@ -250,7 +226,6 @@
       "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
     },
     {
-      "id":7,
       "reviewer":"Valery",
       "rating":3,
       "starCount": "⭐⭐⭐",
@@ -258,7 +233,6 @@
       "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
     },
     {
-      "id":8,
       "reviewer":"Nathan",
       "rating":2,
       "starCount": "⭐⭐",
@@ -266,7 +240,6 @@
       "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
     },
     {
-      "id":9,
       "reviewer":"Philip",
       "rating":2,
       "starCount": "⭐⭐",
@@ -274,7 +247,6 @@
       "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
     },
     {
-      "id":10,
       "reviewer":"Livi",
       "rating":5,
       "starCount": "⭐⭐⭐⭐⭐",
