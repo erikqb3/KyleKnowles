@@ -12,7 +12,8 @@ export class ReviewsService {
   //   throw new Error('Method not implemented.');
   // }
   private reviews: Review[] = [];
-  private fireBase_link: string = "https://kyleknowles-749f3-default-rtdb.firebaseio.com/Reviews.json";
+  // private fireBase_link: string = "https://kyleknowles-749f3-default-rtdb.firebaseio.com/Reviews.json";
+  private fireBase_link: string = "https://localhost:7057/api/Reviews";
   private currentId!: number;
   public reviewTagSelectedEvent = new Subject<Review>();
   public reviewChangedEvent = new Subject<Review[]>();

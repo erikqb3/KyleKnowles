@@ -70,6 +70,7 @@
   },
   "Photos":[
     {
+      "id":"0",
       "page":"Home",
       "category":"Background",
       "type":"hero",
@@ -77,6 +78,7 @@
       "path":"assets/imgs/Pages/home-hero.jpg"
     },
     {
+      "id":"1",
       "page":"Home",
       "category":"Background",
       "type":"secondary",
@@ -84,6 +86,7 @@
       "path":"assets/imgs/Pages/home-secondary.jpg"
     },
     {
+      "id":"2",
       "page":"Deals",
       "category":"Background",
       "type":"hero",
@@ -91,6 +94,7 @@
       "path":"assets/imgs/Pages/deals-hero.jpg"
     },
     {
+      "id":"3",
       "page":"Deals",
       "category":"Background",
       "type":"secondary",
@@ -98,6 +102,7 @@
       "path":"assets/imgs/Pages/deals-secondary.jpg"
     },
     {
+      "id":"4",
       "page":"Reviews",
       "category":"Background",
       "type":"hero",
@@ -105,6 +110,7 @@
       "path":"assets/imgs/Pages/reviews-hero.jpg"
     },
     {
+      "id":"5",
       "page":"Reviews",
       "category":"Background",
       "type":"secondary",
@@ -112,6 +118,7 @@
       "path":""
     },
     {
+      "id":"6",
       "page":"About",
       "category":"Background",
       "type":"hero",
@@ -119,6 +126,7 @@
       "path":"assets/imgs/Pages/about-hero.jpg"
     },
     {
+      "id":"7",
       "page":"About",
       "category":"Background",
       "type":"secondary",
@@ -126,6 +134,7 @@
       "path":""
     },
     {
+      "id":"8",
       "page":"Contact",
       "category":"Background",
       "type":"hero",
@@ -133,6 +142,7 @@
       "path":"assets/imgs/Pages/contact-hero.jpg"
     },
     {
+      "id":"9",
       "page":"Contact",
       "category":"Background",
       "type":"secondary",
@@ -143,6 +153,7 @@
 
     
     {
+      "id":"10",
       "page":"Portfolio",
       "category":"Thorough Vaccuming",
       "type":"after",
@@ -150,6 +161,7 @@
       "path":"assets/imgs/Portfolio/after1.jpg"
     },
     {
+      "id":"12",
       "page":"Portfolio",
       "category":"Thorough Vaccuming",
       "type":"before",
@@ -157,6 +169,7 @@
       "path":"assets/imgs/Portfolio/before1.jpg"
     },
     {
+      "id":"13",
       "page":"Portfolio",
       "category":"Steam Sanitation",
       "type":"after",
@@ -164,6 +177,7 @@
       "path":"assets/imgs/Portfolio/after2.jpg"
     },
     {
+      "id":"14",
       "page":"Portfolio",
       "category":"Steam Sanitation",
       "type":"before",
@@ -171,6 +185,7 @@
       "path":"assets/imgs/Portfolio/before2.jpg"
     },
     {
+      "id":"15",
       "page":"Portfolio",
       "category":"Complete Surface Cleaning",
       "type":"after",
@@ -178,6 +193,7 @@
       "path":"assets/imgs/Portfolio/after3.jpg"
     },
     {
+      "id":"16",
       "page":"Portfolio",
       "category":"Complete Surface Cleaning",
       "type":"before",
@@ -185,6 +201,7 @@
       "path":"assets/imgs/Portfolio/before3.jpg"
     },
     {
+      "id":"17",
       "page":"Portfolio",
       "category":"Air Sanitation",
       "type":"after",
@@ -192,6 +209,7 @@
       "path":"assets/imgs/Portfolio/after4.jpg"
     },
     {
+      "id":"18",
       "page":"Portfolio",
       "category":"Air Sanitation",
       "type":"before",
@@ -199,6 +217,7 @@
       "path":"assets/imgs/Portfolio/before4.jpg"
     },
     {
+      "id":"19",
       "page":"Portfolio",
       "category":"UV Plastic Protection",
       "type":"after",
@@ -206,6 +225,7 @@
       "path":"assets/imgs/Portfolio/after5.jpg"
     },
     {
+      "id":"20",
       "page":"Portfolio",
       "category":"UV Plastic Protection",
       "type":"before",
@@ -213,6 +233,7 @@
       "path":"assets/imgs/Portfolio/before5.jpg"
     },
     {
+      "id":"21",
       "page":"Portfolio",
       "category":"Leather Cleaning and Conditioning",
       "type":"after",
@@ -220,6 +241,7 @@
       "path":"assets/imgs/Portfolio/after6.jpg"
     },
     {
+      "id":"22",
       "page":"Portfolio",
       "category":"Leather Cleaning and Conditioning",
       "type":"before",
@@ -227,6 +249,7 @@
       "path":"assets/imgs/Portfolio/before6.jpg"
     },
     {
+      "id":"23",
       "page":"Portfolio",
       "category":"Shampoo/Extraction",
       "type":"after",
@@ -234,6 +257,7 @@
       "path":"assets/imgs/Portfolio/after7.jpg"
     },
     {
+      "id":"24",
       "page":"Portfolio",
       "category":"Shampoo/Extraction",
       "type":"before",
@@ -241,6 +265,7 @@
       "path":"assets/imgs/Portfolio/before7.jpg"
     },
     {
+      "id":"25",
       "page":"Portfolio",
       "category":"Exterior Wash",
       "type":"after",
@@ -248,6 +273,7 @@
       "path":"assets/imgs/Portfolio/after8.jpg"
     },
     {
+      "id":"26",
       "page":"Portfolio",
       "category":"Exterior Wash",
       "type":"before",

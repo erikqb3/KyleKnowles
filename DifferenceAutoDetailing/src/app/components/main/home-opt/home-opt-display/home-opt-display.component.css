@@ -1,0 +1,18 @@
+@media only all and (min-width: 0) {
+  div.display {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  div.display div {
+    width: 80vh;
+    height: 40vh;
+    overflow: hidden;
+  }
+  div.display div img {
+    height: 100%;
+  }
+}/*# sourceMappingURL=home-opt-display.component.css.map */

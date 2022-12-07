@@ -48,9 +48,6 @@ import { HttpClientModule } from "@angular/common/http";
 
 const appRoutes: Routes = [
   {path: '', component: MainComponent},
-  {path: 'portfolio', component:MainComponent, children: [
-    { path: ':id', component: HomeOptDisplayComponent}
-  ]},
   {path: 'deals', component: DealsOptComponent},
   {path: 'reviews', component: ReviewsOptComponent},
   {path: 'about', component: AboutOptComponent},
@@ -65,7 +62,10 @@ const appRoutes: Routes = [
       { path: ':id', component: ReviewsTabDisplayComponent}
     ]},
     { path: 'info', component: InfoTabComponent}
-  ]}
+  ]},
+  {path: ':id', component: MainComponent, children: [
+    { path: '', component: HomeOptDisplayComponent}
+  ]},
 ]
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],

@@ -13,6 +13,7 @@ export class PhotosService {
   public photosChangedEvent = new Subject<Photo[]>();
   public maxPhotoId!: number;
   public gottenPhoto: Photo;
+  public secondaryPhoto: Photo;
   
 
   constructor(
@@ -27,20 +28,29 @@ export class PhotosService {
           (photos: Photo[]) => {
             this.photos = photos;
             this.photosChangedEvent.next(this.photos.slice());
-            console.log(this.photos);
+            // console.log(this.photos);
             return this.photos;
           }
         )
   }
 
   getPhoto(id:string): Photo {
-    console.log(this.photos);
+    // console.log(this.photos);
     this.photos.forEach(singlePhoto => {
       if (id == singlePhoto.id) {
         this.gottenPhoto = singlePhoto;
       }
     });
     return this.gottenPhoto;
+  }
+  getSecondary(first:Photo):Photo{
+    this.photos.forEach(singlePhoto => {
+      if (singlePhoto.category == first.category){
+        this.secondaryPhoto=singlePhoto;
+      }
+    });
+    console.log(first, this.secondaryPhoto);
+    return this.secondaryPhoto;
   }
 
 }

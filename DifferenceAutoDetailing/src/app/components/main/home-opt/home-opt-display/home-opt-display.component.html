@@ -1,1 +1,11 @@
-<p>home-opt-display works!</p>
+
+<div 
+  (click)="returnToHome()"
+  class="display">
+  <div>
+    <img src="{{ first.path }}" alt="{{ first.alt}}">
+  </div>
+  <div>
+    <img src="{{ second.path }}" alt="{{ second.alt}}">
+  </div>
+</div>

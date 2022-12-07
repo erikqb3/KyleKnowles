@@ -13,7 +13,7 @@ export class HomeOptSingleComponent implements OnInit {
   constructor(private photoService: PhotosService) { }
 
   ngOnInit(): void {
-    console.log(this.photo);
+    // console.log(this.photo);
   }
 
 }

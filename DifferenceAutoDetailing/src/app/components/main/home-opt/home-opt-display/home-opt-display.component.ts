@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Photo } from 'src/app/models/photo.model';
 import { PhotosService } from 'src/app/services/photo.service';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-opt-display',
@@ -8,12 +9,28 @@ import { PhotosService } from 'src/app/services/photo.service';
   styleUrls: ['./home-opt-display.component.scss']
 })
 export class HomeOptDisplayComponent implements OnInit {
-  @Input()photo!: Photo;
+  id: string;
+  first: Photo;
+  second: Photo;
 
-  constructor(private photoService: PhotosService) { }
+  constructor(
+    private photoService: PhotosService,
+    private router: Router,
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    console.log(this.photo);
+    this.route.params
+      .subscribe(
+        (params: Params) => {
+          this.id = params['id'];
+          this.first = this.photoService.getPhoto(this.id);
+          this.second = this.photoService.getSecondary(this.first);
+        }
+      )
+  }
+
+  returnToHome():void{
+    this.router.navigateByUrl('/')
   }
 
 }

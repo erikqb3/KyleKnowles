@@ -20,7 +20,7 @@ export class HomeOptComponent implements OnInit, OnDestroy {
       .subscribe(
         (photoArray: Photo[])=> {
           this.photos = photoArray;
-          console.log(this.photos);
+          // console.log(this.photos);
         }
       )
   }
