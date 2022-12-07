@@ -1,4 +1,4 @@
-@media only all and (min-width: 0px) {
+@media only all and (min-width: 0) {
   div.singleReview {
     background-color: rgba(100, 100, 100, 0.75);
     height: 5rem;
@@ -16,10 +16,21 @@ div.singleReview a:visited {
     padding-left: 0.5rem;
     border-top: 0.5px solid black;
     border-bottom: 0.5px solid black;
+    color: white;
   }
   div.singleReview a:link h4,
 div.singleReview a:visited h4 {
     margin: 0;
+  }
+  div.singleReview:hover,
+div.singleReview:active {
+    background-color: rgba(50, 50, 75, 0.75);
+  }
+}
+@media only all and (min-width: 992px) {
+  div.singleReview a:link,
+div.singleReview a:visited {
+    padding-left: 2.5rem;
   }
   div.singleReview:hover,
 div.singleReview:active {
