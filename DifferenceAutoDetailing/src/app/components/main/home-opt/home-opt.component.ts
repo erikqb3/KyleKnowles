@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Photo } from 'src/app/models/photo.model';
+import { Photo } from 'src/app/models/haveIDs/photo.model';
 import { PhotosService } from 'src/app/services/photo.service';
 
 @Component({

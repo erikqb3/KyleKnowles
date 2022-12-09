@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Photo } from 'src/app/models/photo.model';
+import { Photo } from 'src/app/models/haveIDs/photo.model';
 
 @Pipe({
   name: 'portfolioFilter',

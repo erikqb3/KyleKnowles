@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Contact } from '../models/contact.model';
+import { Contact } from '../models/haveIDs/haveIDs/contact.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Subject } from 'rxjs';
 

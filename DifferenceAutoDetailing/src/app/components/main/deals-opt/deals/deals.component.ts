@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Deal } from 'src/app/models/deals.model';
+import { Deal } from 'src/app/models/haveIDs/deal.model';
 
 @Component({
   selector: 'app-deals',

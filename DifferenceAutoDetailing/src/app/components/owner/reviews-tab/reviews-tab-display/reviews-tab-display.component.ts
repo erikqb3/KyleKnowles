@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { Review } from 'src/app/models/review.model';
+import { Review } from 'src/app/models/haveIDs/review.model';
 import { ReviewsService } from 'src/app/services/reviews.service';
 
 @Component({
@@ -29,7 +29,7 @@ export class ReviewsTabDisplayComponent implements OnInit {
   }
 
   onDelete(){
-    console.log(this.review);
+    // console.log(this.review);
     this.reviewService.onDelete(this.review);
     this.router.navigateByUrl('owner/reviews')
   }

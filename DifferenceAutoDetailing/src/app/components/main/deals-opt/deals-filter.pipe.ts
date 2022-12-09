@@ -1,6 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Deal } from 'src/app/models/deals.model';
-
+import { Deal } from 'src/app/models/haveIDs/deal.model';
 
 @Pipe({
   name: 'dealsFilter',

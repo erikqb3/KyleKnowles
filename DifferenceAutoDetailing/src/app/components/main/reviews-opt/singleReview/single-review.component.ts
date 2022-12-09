@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { range } from 'rxjs';
-import { Review } from 'src/app/models/review.model';
+import { Review } from 'src/app/models/haveIDs/review.model';
 import { ReviewsService } from 'src/app/services/reviews.service';
 
 @Component({

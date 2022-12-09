@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { Deal } from 'src/app/models/deals.model';
+import { Deal } from 'src/app/models/haveIDs/deal.model';
 import { DealsService } from 'src/app/services/deals.service';
 // import { Deals_N_FeaturesService } from 'src/app/services/deals_N_features.service'
 

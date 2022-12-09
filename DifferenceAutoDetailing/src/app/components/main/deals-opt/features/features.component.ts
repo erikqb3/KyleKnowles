@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Deal } from 'src/app/models/deals.model';
-import { Features } from 'src/app/models/features.model';
+import { Deal } from 'src/app/models/haveIDs/deal.model';
+import { Features } from 'src/app/models/haveIDs/feature.model';
 import { Deals_N_FeaturesService } from 'src/app/services/deals_N_features.service';
 
 @Component({

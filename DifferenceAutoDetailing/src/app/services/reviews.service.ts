@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Review } from '../models/review.model';
+import { Review } from '../models/haveIDs/review.model';
+import { newReview } from '../models/noIDs/newReview.model'
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Subject } from 'rxjs';
 // import { ContactOptComponent } from '../contact-opt/contact-opt.component';
@@ -26,15 +27,16 @@ export class ReviewsService {
     this.reviews = [];
   }
 
-  addReview(newReview: Review){
+  addReview(postReview: newReview){
     if ((newReview == null)||(newReview == undefined)){
       return;
     }
-    // this.maxReviewId++;
-    // newReview.id = this.maxReviewId.toString();
-    // this.reviews.push(newReview);
-    this.storeReview(newReview);
 
+    this.http
+      .post(this.fireBase_link, postReview)
+        .subscribe(response => {
+          this.reviewChangedEvent.next(this.reviews.slice());
+        })
   }
 
   getMaxId():number {
@@ -86,24 +88,24 @@ export class ReviewsService {
     if (!review){
       return;
     }
-    const pos = this.reviews.indexOf(review);
-    if (pos < 0){
-      return;
-    }
-
-    this.reviews.splice(pos,1);
-    this.storeReview(review);
-  } 
-
-  storeReview(reviewChange: Review){
-    console.log(reviewChange);
-    // const storedReview = this.reviews;
+    var Id = review.Id;
+    console.log(Id)
     this.http
-      .put(this.fireBase_link, reviewChange)
+    .delete(this.fireBase_link + '/' + Id)
         .subscribe(response => {
           this.reviewChangedEvent.next(this.reviews.slice());
         })
-  }
+  } 
+
+  // storeReview(reviewChange: Review){
+  //   console.log(reviewChange);
+  //   // const storedReview = this.reviews;
+  //   this.http
+  //     .put(this.fireBase_link, reviewChange)
+  //       .subscribe(response => {
+  //         this.reviewChangedEvent.next(this.reviews.slice());
+  //       })
+  // }
 
 
 }
