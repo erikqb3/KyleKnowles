@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Deals } from 'src/app/models/deals.model';
+import { Deal } from 'src/app/models/deals.model';
+import { DealsService } from 'src/app/services/deals.service';
 
 @Component({
   selector: 'app-deals-display-single',
@@ -7,11 +8,18 @@ import { Deals } from 'src/app/models/deals.model';
   styleUrls: ['./deals-display-single.component.scss']
 })
 export class DealsDisplaySingleComponent implements OnInit {
-@Input() singleDeal: Deals;
-  constructor() { }
+@Input() singleDeal: Deal;
+  constructor(
+    private dealService: DealsService
+  ) { }
 
   ngOnInit(): void {
     console.log(this.singleDeal);
   }
 
+  onDelete(){
+    console.log(this.singleDeal);
+    this.dealService.onDelete(this.singleDeal);
+    
+  }
 }

@@ -32,8 +32,8 @@ export class ReviewsService {
     }
     // this.maxReviewId++;
     // newReview.id = this.maxReviewId.toString();
-    this.reviews.push(newReview);
-    this.storeReview();
+    // this.reviews.push(newReview);
+    this.storeReview(newReview);
 
   }
 
@@ -41,8 +41,8 @@ export class ReviewsService {
     let maxId = 0;
 
     this.reviews.forEach(review => {
-      console.log(review.id)
-      this.currentId =+ review.id;
+      console.log(review.Id)
+      this.currentId =+ review.Id;
       if (this.currentId > maxId){
         maxId = this.currentId;
       } 
@@ -65,15 +65,18 @@ export class ReviewsService {
   }
   getReview(id:string): Review {
     console.log(this.reviews);
+    console.log(id);
     this.reviews.forEach(singleReview => {
-      if (id == singleReview.id) {
+      console.log(singleReview);
+      if (id == singleReview.Id) {
         this.gottenReview = singleReview;
       }
     });
     return this.gottenReview;
   }
   getStars(review:Review, rating:number): void {
-    if (review.starCount == ""){
+    if (review.starCount == "starcount"){
+      review.starCount = "";
       for (let i = 0; i < rating; i++){
         review.starCount += "⭐";
       }
@@ -89,13 +92,14 @@ export class ReviewsService {
     }
 
     this.reviews.splice(pos,1);
-    this.storeReview();
+    this.storeReview(review);
   } 
 
-  storeReview(){
-    const storedReview = this.reviews;
+  storeReview(reviewChange: Review){
+    console.log(reviewChange);
+    // const storedReview = this.reviews;
     this.http
-      .put(this.fireBase_link, storedReview)
+      .put(this.fireBase_link, reviewChange)
         .subscribe(response => {
           this.reviewChangedEvent.next(this.reviews.slice());
         })

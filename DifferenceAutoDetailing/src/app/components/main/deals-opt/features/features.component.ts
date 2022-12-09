@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Deals } from 'src/app/models/deals.model';
+import { Deal } from 'src/app/models/deals.model';
 import { Features } from 'src/app/models/features.model';
 import { Deals_N_FeaturesService } from 'src/app/services/deals_N_features.service';
 

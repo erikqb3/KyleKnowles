@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Deals } from 'src/app/models/deals.model';
+import { Deal } from 'src/app/models/deals.model';
 
 
 @Pipe({
@@ -8,8 +8,8 @@ import { Deals } from 'src/app/models/deals.model';
 })
 export class DealsFilterPipe implements PipeTransform {
 
-  transform(deals: Deals[], term: string): any {
-    const filteredDeals: Deals[] = [];
+  transform(deals: Deal[], term: string): any {
+    const filteredDeals: Deal[] = [];
     
     deals.forEach(deal => {
       if (deal.type == term){

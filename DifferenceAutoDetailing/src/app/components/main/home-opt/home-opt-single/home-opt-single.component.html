@@ -3,7 +3,7 @@
   <div class="overlay">
     <h3>{{ photo.category }}</h3>
     <button routerLink="/deals">See Deals</button>
-    <button [routerLink]="[ photo.id ]">View Photo</button>
+    <button [routerLink]="[ photo.Id ]">Gallery</button>
   </div>
   <img src="{{ photo.path }}" alt="{{ photo.alt }}">
 </article>

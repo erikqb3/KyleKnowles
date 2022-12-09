@@ -1,27 +1,71 @@
 @media only screen and (min-width: 0) {
+  div.aboutOwner {
+    background-image: url("../../../../assets/imgs/Pages/about-secondary.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  div.aboutOwner .overlay {
+    padding: 15vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    color: white;
+  }
+  div.aboutOwner .overlay h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  div.aboutOwner .overlay div#bio {
+    width: 90%;
+    margin: 0rem auto 0 auto;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.25rem;
+    background-color: rgba(100, 100, 100, 0.75);
+    padding: 1rem;
+    border-radius: 15px;
+  }
+  div.aboutOwner .overlay figure {
+    width: 60%;
+  }
+  div.aboutOwner .overlay figure img {
+    width: 100%;
+    margin-top: 5rem;
+  }
+  div.aboutOwner .overlay::-webkit-scrollbar {
+    display: none;
+  }
   div.topBanner {
-    background-image: url("../../../../assets/imgs/HomePhoto1.jpg");
+    background-image: url("../../../../assets/imgs/Pages/about-hero.jpg");
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
   div.topBanner .overlay {
-    padding: 25vh 0;
-    display: block;
-    height: 100vh;
+    padding: 15vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow-y: auto;
     color: white;
   }
   div.topBanner .overlay h1 {
     text-align: center;
+    font-size: 3rem;
   }
-  div.topBanner .overlay div#bio {
+  div.topBanner .overlay div#why {
     width: 80%;
-    margin: -7rem auto 0 auto;
+    margin: 0rem auto 0 auto;
     font-family: "Times New Roman", Times, serif;
     font-size: 1.25rem;
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 7.5rem 1rem 1rem 1rem;
+    background-color: rgba(100, 100, 100, 0.75);
+    padding: 1rem;
     border-radius: 15px;
   }
   div.topBanner .overlay::-webkit-scrollbar {
@@ -33,15 +77,193 @@
   }
 }
 @media only screen and (min-width: 786px) {
+  div.aboutOwner {
+    background-image: url("../../../../assets/imgs/Pages/about-secondary.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  div.aboutOwner .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    color: white;
+  }
+  div.aboutOwner .overlay h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  div.aboutOwner .overlay div#bio {
+    margin: 0rem auto 0 auto;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.25rem;
+    background-color: rgba(100, 100, 100, 0.75);
+    padding: 1rem;
+    border-radius: 15px;
+  }
+  div.aboutOwner .overlay figure {
+    width: 40%;
+  }
+  div.aboutOwner .overlay::-webkit-scrollbar {
+    display: none;
+  }
+  div.topBanner {
+    background-image: url("../../../../assets/imgs/Pages/about-hero.jpg");
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   div.topBanner .overlay {
-    overflow: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    color: white;
+  }
+  div.topBanner .overlay h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  div.topBanner .overlay div#why {
+    width: 80%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.25rem;
+    background-color: rgba(100, 100, 100, 0.75);
+    border-radius: 15px;
+  }
+  div.topBanner .overlay::-webkit-scrollbar {
+    display: none;
   }
 }
 @media only screen and (min-width: 992px) {
-  div.topBanner .overlay div#bio {
-    width: 80%;
-    margin: -9rem auto 0 auto;
+  div.aboutOwner {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  div.aboutOwner .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    color: white;
+  }
+  div.aboutOwner .overlay h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  div.aboutOwner .overlay div#bio {
     font-family: "Times New Roman", Times, serif;
-    padding: 9rem 1rem 1rem 1rem;
+    font-size: 1.25rem;
+    background-color: rgba(100, 100, 100, 0.75);
+    border-radius: 15px;
+  }
+  div.aboutOwner .overlay figure {
+    width: 40%;
+  }
+  div.aboutOwner .overlay::-webkit-scrollbar {
+    display: none;
+  }
+  div.topBanner {
+    background-image: url("../../../../assets/imgs/Pages/about-hero.jpg");
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  div.topBanner .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    color: white;
+  }
+  div.topBanner .overlay h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  div.topBanner .overlay div#why {
+    width: 80%;
+    font-size: 1.75rem;
+    line-height: 3rem;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgba(100, 100, 100, 0.75);
+    border-radius: 15px;
+  }
+  div.topBanner .overlay::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  div.aboutOwner {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  div.aboutOwner .overlay {
+    padding: 15rem 15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: auto;
+    color: white;
+  }
+  div.aboutOwner .overlay h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  div.aboutOwner .overlay div#bio {
+    width: 60%;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.25rem;
+    background-color: rgba(100, 100, 100, 0.75);
+    border-radius: 15px;
+  }
+  div.aboutOwner .overlay figure {
+    width: 30%;
+  }
+  div.aboutOwner .overlay figure img {
+    margin: 0;
+  }
+  div.aboutOwner .overlay::-webkit-scrollbar {
+    display: none;
+  }
+  div.topBanner {
+    background-image: url("../../../../assets/imgs/Pages/about-hero.jpg");
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  div.topBanner .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    color: white;
+  }
+  div.topBanner .overlay h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  div.topBanner .overlay div#why {
+    width: 80%;
+    font-size: 1.75rem;
+    line-height: 3rem;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgba(100, 100, 100, 0.75);
+    border-radius: 15px;
+  }
+  div.topBanner .overlay::-webkit-scrollbar {
+    display: none;
   }
 }/*# sourceMappingURL=about-opt.component.css.map */

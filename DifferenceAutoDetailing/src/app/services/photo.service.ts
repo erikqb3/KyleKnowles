@@ -9,7 +9,7 @@ import { Features } from '../models/features.model';
 })
 export class PhotosService {
   private photos: Photo[] = [];
-  private fireBase_link: string = "https://kyleknowles-749f3-default-rtdb.firebaseio.com/Photos.json";
+  private fireBase_link: string = "https://localhost:7057/api/Photos";
   public photosChangedEvent = new Subject<Photo[]>();
   public maxPhotoId!: number;
   public gottenPhoto: Photo;
@@ -37,7 +37,7 @@ export class PhotosService {
   getPhoto(id:string): Photo {
     // console.log(this.photos);
     this.photos.forEach(singlePhoto => {
-      if (id == singlePhoto.id) {
+      if (id == singlePhoto.Id) {
         this.gottenPhoto = singlePhoto;
       }
     });
@@ -49,7 +49,7 @@ export class PhotosService {
         this.secondaryPhoto=singlePhoto;
       }
     });
-    console.log(first, this.secondaryPhoto);
+    // console.log(first, this.secondaryPhoto);
     return this.secondaryPhoto;
   }
 

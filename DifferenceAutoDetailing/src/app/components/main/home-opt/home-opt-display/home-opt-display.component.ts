@@ -29,8 +29,9 @@ export class HomeOptDisplayComponent implements OnInit {
       )
   }
 
-  returnToHome():void{
-    this.router.navigateByUrl('/')
+  returnToHome(display: HTMLDivElement):void{
+    this.router.navigateByUrl('/');
+    
   }
 
 }

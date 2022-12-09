@@ -1,5 +1,4 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Deals } from 'src/app/models/deals.model';
 import { Photo } from 'src/app/models/photo.model';
 
 @Pipe({

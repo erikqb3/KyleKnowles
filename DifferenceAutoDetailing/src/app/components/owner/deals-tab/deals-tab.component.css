@@ -6,10 +6,15 @@
   section div#tagContainer {
     height: 26rem;
     width: 20%;
+    overflow-y: scroll;
   }
   section div#displayContainer {
     height: 26rem;
     width: 80%;
+    overflow-y: scroll;
+  }
+  section ::-webkit-scrollbar {
+    display: none;
   }
 }
 @media only all and (min-width: 992px) {

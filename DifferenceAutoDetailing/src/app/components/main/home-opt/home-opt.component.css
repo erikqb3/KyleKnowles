@@ -1,6 +1,6 @@
 @media only screen and (min-width: 0) {
   div.topBanner {
-    background-image: url("../../../../assets/imgs/HomePhoto3.jpg");
+    background-image: url("../../../../assets/imgs/Pages/home-hero.jpg");
   }
   div.topBanner .overlay {
     color: white;
@@ -23,7 +23,7 @@
   main {
     width: 100%;
     background: black;
-    background-image: url("../../../../assets/imgs/FacebookPhotos/289657999_104438422319838_2102428165433642360_n.jpg");
+    background-image: url("../../../../assets/imgs/Pages/home-secondary.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

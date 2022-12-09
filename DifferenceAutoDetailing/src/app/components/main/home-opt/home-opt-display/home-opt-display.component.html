@@ -1,11 +1,14 @@
 
 <div 
-  (click)="returnToHome()"
-  class="display">
-  <div>
-    <img src="{{ first.path }}" alt="{{ first.alt}}">
-  </div>
+  (click)="returnToHome(display)"
+  class="display"
+  #display>
   <div>
     <img src="{{ second.path }}" alt="{{ second.alt}}">
+    <figcaption>Before</figcaption>
+  </div>
+  <div>
+    <img src="{{ first.path }}" alt="{{ first.alt}}">
+    <figcaption>After</figcaption>
   </div>
 </div>

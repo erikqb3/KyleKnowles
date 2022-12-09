@@ -20,7 +20,7 @@
     <input 
       id="deal"
       name="deal"
-      value="{{ singleDeal.deal }}">
+      value="{{ singleDeal.dealName }}">
   </div>
   <div>
     <input 
@@ -31,6 +31,8 @@
     value="{{ singleDeal.price }}">
   </div>
   <div>
-    <button>Delete</button>
+    <button
+      type="button"
+      (click)="onDelete()">Delete</button>
   </div>
 </div>

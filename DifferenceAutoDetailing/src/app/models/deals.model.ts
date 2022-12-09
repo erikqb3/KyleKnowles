@@ -1,6 +1,6 @@
-export class Deals {
+export class Deal {
   constructor(
-  public deal: string,
+  public dealName: string,
   public type: string,
   public price: number,
   public features_array: string[]

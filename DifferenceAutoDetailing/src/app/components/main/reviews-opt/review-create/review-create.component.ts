@@ -31,7 +31,8 @@ export class ReviewCreateComponent implements OnInit {
       value.rating,
       new Date(dateNow).toDateString(),
       value.reviewText,
-      ""
+      "starcount",
+      true
     );
     console.log(newReview);
     this.reviewService.addReview(newReview);

@@ -40,7 +40,7 @@
       "name": "Air Sanitation"
     },
     {
-      "name": "UV Plastic Protection"
+      "name": "UV Protection"
     },
     {
       "name": "Leather Cleaning and Conditioning"
@@ -55,12 +55,6 @@
   },
   "Copy":{
     "AboutInfo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis, adipisci corporis minima reprehenderit facere quo repudiandae doloribus est accusantium beatae sed provident consectetur nihil porro fugit voluptatem a aliquid praesentium saepe rem. Magni laboriosam inventore placeat animi. Iste molestiae eos aliquam, dignissimos earum itaque magnam sunt similique laboriosam quaerat omnis aperiam maiores id quo quod impedit vero sequi, inventore officia animi placeat!<br>Deserunt dolores sed id quam, nesciunt distinctio dolorum dolore eum vitae provident optio voluptate molestias laboriosam adipisci, ipsum, quidem nobis veritatis quibusdam? Deleniti, maxime. Voluptate debitis temporibus laborum placeat sit quidem explicabo velit quo vero atque dolores dolore nihil odio sunt ipsa doloremque facere, officiis quis cupiditate veniam magnam consequuntur quae. Cupiditate repudiandae commodi eligendi excepturi aut! Laborum facere ea hic molestias, sed soluta, repudiandae ut, deserunt quae eum quam reiciendis?<br>Autem quos, officia suscipit modi corrupti similique quia corporis dolorum totam ad, sit nesciunt! Autem, minus.",
-    "ContactInfo": {
-      "Name":"Kyle Knowles",
-      "Phone":"661-585-7302",
-      "Email":"kylejk13@gmail.com",
-      "Address":"Arcadia"
-    },
     "OneLiners":[
       {"HomePageInfo":"Difference Between a detail and a clean"},
       {"DealsNote":"Note: Prices depend on condition of vehicle"},
@@ -70,7 +64,6 @@
   },
   "Photos":[
     {
-      "id":"0",
       "page":"Home",
       "category":"Background",
       "type":"hero",
@@ -78,7 +71,6 @@
       "path":"assets/imgs/Pages/home-hero.jpg"
     },
     {
-      "id":"1",
       "page":"Home",
       "category":"Background",
       "type":"secondary",
@@ -86,7 +78,6 @@
       "path":"assets/imgs/Pages/home-secondary.jpg"
     },
     {
-      "id":"2",
       "page":"Deals",
       "category":"Background",
       "type":"hero",
@@ -94,7 +85,6 @@
       "path":"assets/imgs/Pages/deals-hero.jpg"
     },
     {
-      "id":"3",
       "page":"Deals",
       "category":"Background",
       "type":"secondary",
@@ -102,7 +92,6 @@
       "path":"assets/imgs/Pages/deals-secondary.jpg"
     },
     {
-      "id":"4",
       "page":"Reviews",
       "category":"Background",
       "type":"hero",
@@ -110,15 +99,13 @@
       "path":"assets/imgs/Pages/reviews-hero.jpg"
     },
     {
-      "id":"5",
       "page":"Reviews",
       "category":"Background",
       "type":"secondary",
-      "alt":"reviewsPic_lg",
+      "alt":"",
       "path":""
     },
     {
-      "id":"6",
       "page":"About",
       "category":"Background",
       "type":"hero",
@@ -126,7 +113,6 @@
       "path":"assets/imgs/Pages/about-hero.jpg"
     },
     {
-      "id":"7",
       "page":"About",
       "category":"Background",
       "type":"secondary",
@@ -134,7 +120,6 @@
       "path":""
     },
     {
-      "id":"8",
       "page":"Contact",
       "category":"Background",
       "type":"hero",
@@ -142,18 +127,13 @@
       "path":"assets/imgs/Pages/contact-hero.jpg"
     },
     {
-      "id":"9",
       "page":"Contact",
       "category":"Background",
       "type":"secondary",
       "alt":"",
       "path":""
     },
-
-
-    
     {
-      "id":"10",
       "page":"Portfolio",
       "category":"Thorough Vaccuming",
       "type":"after",
@@ -161,7 +141,6 @@
       "path":"assets/imgs/Portfolio/after1.jpg"
     },
     {
-      "id":"12",
       "page":"Portfolio",
       "category":"Thorough Vaccuming",
       "type":"before",
@@ -169,7 +148,6 @@
       "path":"assets/imgs/Portfolio/before1.jpg"
     },
     {
-      "id":"13",
       "page":"Portfolio",
       "category":"Steam Sanitation",
       "type":"after",
@@ -177,7 +155,6 @@
       "path":"assets/imgs/Portfolio/after2.jpg"
     },
     {
-      "id":"14",
       "page":"Portfolio",
       "category":"Steam Sanitation",
       "type":"before",
@@ -185,7 +162,6 @@
       "path":"assets/imgs/Portfolio/before2.jpg"
     },
     {
-      "id":"15",
       "page":"Portfolio",
       "category":"Complete Surface Cleaning",
       "type":"after",
@@ -193,7 +169,6 @@
       "path":"assets/imgs/Portfolio/after3.jpg"
     },
     {
-      "id":"16",
       "page":"Portfolio",
       "category":"Complete Surface Cleaning",
       "type":"before",
@@ -201,7 +176,6 @@
       "path":"assets/imgs/Portfolio/before3.jpg"
     },
     {
-      "id":"17",
       "page":"Portfolio",
       "category":"Air Sanitation",
       "type":"after",
@@ -209,7 +183,6 @@
       "path":"assets/imgs/Portfolio/after4.jpg"
     },
     {
-      "id":"18",
       "page":"Portfolio",
       "category":"Air Sanitation",
       "type":"before",
@@ -217,7 +190,6 @@
       "path":"assets/imgs/Portfolio/before4.jpg"
     },
     {
-      "id":"19",
       "page":"Portfolio",
       "category":"UV Plastic Protection",
       "type":"after",
@@ -225,7 +197,6 @@
       "path":"assets/imgs/Portfolio/after5.jpg"
     },
     {
-      "id":"20",
       "page":"Portfolio",
       "category":"UV Plastic Protection",
       "type":"before",
@@ -233,7 +204,6 @@
       "path":"assets/imgs/Portfolio/before5.jpg"
     },
     {
-      "id":"21",
       "page":"Portfolio",
       "category":"Leather Cleaning and Conditioning",
       "type":"after",
@@ -241,7 +211,6 @@
       "path":"assets/imgs/Portfolio/after6.jpg"
     },
     {
-      "id":"22",
       "page":"Portfolio",
       "category":"Leather Cleaning and Conditioning",
       "type":"before",
@@ -249,7 +218,6 @@
       "path":"assets/imgs/Portfolio/before6.jpg"
     },
     {
-      "id":"23",
       "page":"Portfolio",
       "category":"Shampoo/Extraction",
       "type":"after",
@@ -257,7 +225,6 @@
       "path":"assets/imgs/Portfolio/after7.jpg"
     },
     {
-      "id":"24",
       "page":"Portfolio",
       "category":"Shampoo/Extraction",
       "type":"before",
@@ -265,7 +232,6 @@
       "path":"assets/imgs/Portfolio/before7.jpg"
     },
     {
-      "id":"25",
       "page":"Portfolio",
       "category":"Exterior Wash",
       "type":"after",
@@ -273,7 +239,6 @@
       "path":"assets/imgs/Portfolio/after8.jpg"
     },
     {
-      "id":"26",
       "page":"Portfolio",
       "category":"Exterior Wash",
       "type":"before",
@@ -283,92 +248,103 @@
   ],
   "Reviews":[
     {
-      "id":"0",
+      "Id":"0",
       "reviewer":"Kobe",
       "rating":5,
       "starCount": "⭐⭐⭐⭐⭐",
       "reviewDate":"Fri Dec 25 2022",
-      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
+      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT",
+      "approved":true
     },
     {
-      "id":"1",
+      "Id":"1",
       "reviewer":"Lloyd",
       "rating":3,
       "starCount": "⭐⭐⭐",
       "reviewDate":"Fri Dec 25 2022",
-      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
+      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT",
+      "approved":true
     },
     {
-      "id":"2",
+      "Id":"2",
       "reviewer":"Sabrina",
       "rating":4,
       "starCount": "⭐⭐⭐⭐",
       "reviewDate":"Fri Dec 25 2022",
-      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
+      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT",
+      "approved":true
     },
     {
-      "id":"3",
+      "Id":"3",
       "reviewer":"Lyle",
       "rating":5,
       "starCount": "⭐⭐⭐⭐⭐",
       "reviewDate":"Fri Dec 25 2022",
-      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
+      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT",
+      "approved":true
     },
     {
-      "id":"4",
+      "Id":"4",
       "reviewer":"Kolton",
       "rating":5,
       "starCount": "⭐⭐⭐⭐⭐",
       "reviewDate":"Fri Dec 25 2022",
-      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
+      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT",
+      "approved":true
     },
     {
-      "id":"5",
+      "Id":"5",
       "reviewer":"Taylor",
       "rating":5,
       "starCount": "⭐⭐⭐⭐⭐",
       "reviewDate":"Fri Dec 25 2022",
-      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
+      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT",
+      "approved":true
     },
     {
-      "id":"6",
+      "Id":"6",
       "reviewer":"Bronson",
       "rating":4,
       "starCount": "⭐⭐⭐⭐",
       "reviewDate":"Fri Dec 25 2022",
-      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
+      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT",
+      "approved":true
     },
     {
-      "id":"7",
+      "Id":"7",
       "reviewer":"Valery",
       "rating":3,
       "starCount": "⭐⭐⭐",
       "reviewDate":"Fri Dec 25 2022",
-      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
+      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT",
+      "approved":true
     },
     {
-      "id":"8",
+      "Id":"8",
       "reviewer":"Nathan",
       "rating":2,
       "starCount": "⭐⭐",
       "reviewDate":"Fri Dec 25 2022",
-      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
+      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT",
+      "approved":true
     },
     {
-      "id":"9",
+      "Id":"9",
       "reviewer":"Philip",
       "rating":2,
       "starCount": "⭐⭐",
       "reviewDate":"Fri Dec 25 2022",
-      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
+      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT",
+      "approved":true
     },
     {
-      "id":"10",
+      "Id":"10",
       "reviewer":"Livi",
       "rating":5,
       "starCount": "⭐⭐⭐⭐⭐",
       "reviewDate":"Fri Dec 25 2022",
-      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT"
+      "reviewText":"LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT, LOTS OF TEXT",
+      "approved":true
     }
   ]
 }

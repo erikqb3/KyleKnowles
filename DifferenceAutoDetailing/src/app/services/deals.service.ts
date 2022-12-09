@@ -2,22 +2,15 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Deal } from '../models/deals.model';
 import { Subject } from 'rxjs';
-import { Features } from '../models/features.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class Deals_N_FeaturesService {
+export class DealsService {
   private deals: Deal[] = [];
   private fireBase_link: string = "https://localhost:7057/api/Deals";
   public dealsChangedEvent = new Subject<Deal[]>();
   public addNewDeal: boolean = false;
-
-
-  private features: Features[] = [];
-  private fireBase_link_features: string = "https://localhost:7057/api/Features";
-  public featuresChangedEvent = new Subject<Features[]>();
-
 
   constructor(
     private http: HttpClient
@@ -37,40 +30,18 @@ export class Deals_N_FeaturesService {
         )
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  getFeatures(){
-    this.http
-    .get<Features[]>(this.fireBase_link_features)
-      .subscribe(
-        (features: Features[]) => {
-          this.features = features;
-          this.featuresChangedEvent.next(this.features);
-          // console.log(this.features);
-          return this.features;
-        }
-      )
+  onDelete(deal: Deal){
+  if (!deal){
+    return;
+  }
+  const pos = this.deals.indexOf(deal);
+  if (pos < 0){
+    return;
   }
 
-
+  this.deals.splice(pos,1);
+  // this.dealStore();
+  }
 
 
 
