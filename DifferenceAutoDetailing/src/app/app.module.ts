@@ -44,6 +44,7 @@ import { FeaturesDisplaySingleComponent } from './components/owner/deals-tab/fea
 
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from "@angular/common/http";
+import { ApprovedOnlyPipe } from './components/main/reviews-opt/approved-only.pipe';
 
 
 @NgModule({
@@ -78,6 +79,7 @@ import { HttpClientModule } from "@angular/common/http";
     FeaturesDisplaySingleComponent,
     HomeOptDisplayComponent,
     PortfolioFilterPipe,
+    ApprovedOnlyPipe,
   ],
   imports: [
     BrowserModule,

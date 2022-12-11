@@ -17,6 +17,7 @@ export class ReviewsTabComponent implements OnInit, OnDestroy {
   constructor(private reviewService: ReviewsService) { }
 
   ngOnInit(): void {
+    console.log("Tab Window")
     this.reviewService.getReviews();
     this.reviewChangedEvent_sub = this.reviewService.reviewChangedEvent
       .subscribe(

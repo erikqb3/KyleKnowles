@@ -59,17 +59,17 @@ export class ReviewsService {
           (reviews: Review[])=>{
             this.reviews = reviews;
             this.reviewChangedEvent.next(this.reviews.slice());
-            console.log(this.reviews);
+            // console.log(this.reviews);
             // console.log(reviews);
             return this.reviews;
           }
         )
   }
   getReview(id:string): Review {
-    console.log(this.reviews);
-    console.log(id);
+    // console.log(this.reviews);
+    // console.log(id);
     this.reviews.forEach(singleReview => {
-      console.log(singleReview);
+      // console.log(singleReview);
       if (id == singleReview.Id) {
         this.gottenReview = singleReview;
       }
@@ -89,13 +89,22 @@ export class ReviewsService {
       return;
     }
     var Id = review.Id;
-    console.log(Id)
+    // console.log(Id)
     this.http
     .delete(this.fireBase_link + '/' + Id)
         .subscribe(response => {
           this.reviewChangedEvent.next(this.reviews.slice());
         })
   } 
+
+  updateApproval(review: Review){
+    this.http
+      .put(this.fireBase_link + '/' + review.Id, review)
+        .subscribe(response => {
+          this.reviewChangedEvent.next(this.reviews.slice())
+          console.log(response);
+        })
+  }
 
   // storeReview(reviewChange: Review){
   //   console.log(reviewChange);

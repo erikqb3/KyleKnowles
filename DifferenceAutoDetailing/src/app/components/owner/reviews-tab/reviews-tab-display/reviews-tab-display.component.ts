@@ -28,6 +28,15 @@ export class ReviewsTabDisplayComponent implements OnInit {
       )
   }
 
+  approveReview(){
+    this.review.approved=true;
+    this.reviewService.updateApproval(this.review);   
+  }
+  hideReview(){
+    this.review.approved=false;
+    this.reviewService.updateApproval(this.review);
+  }
+
   onDelete(){
     // console.log(this.review);
     this.reviewService.onDelete(this.review);

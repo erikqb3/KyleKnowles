@@ -7,7 +7,7 @@
 <main>
   <app-review-create></app-review-create>
   <app-single-review
-    *ngFor="let review_element of reviews"
+    *ngFor="let review_element of reviews | approvedOnly: true"
     [review]="review_element"
   ></app-single-review>
 </main>

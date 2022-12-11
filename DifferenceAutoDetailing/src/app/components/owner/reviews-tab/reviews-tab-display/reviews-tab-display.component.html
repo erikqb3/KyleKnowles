@@ -7,4 +7,11 @@
     type='button' 
     (click)="onDelete()">
     Delete</button>
+    <button
+    *ngIf=" review.approved  == false; else HideBtn"
+    (click)="approveReview()">Approve</button>
+    <ng-template #HideBtn>
+      <button
+      (click)="hideReview()">Hide</button>
+    </ng-template>
 </section>

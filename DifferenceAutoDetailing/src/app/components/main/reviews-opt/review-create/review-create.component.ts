@@ -39,7 +39,7 @@ export class ReviewCreateComponent implements OnInit {
     );
     console.log(postReview);
     this.reviewService.addReview(postReview);
-    // form.reset();
+    form.reset();
     this.router.navigateByUrl('/reviews');
   }
 }

@@ -15,6 +15,7 @@ export class ReviewsOptComponent implements OnInit, OnDestroy {
   constructor(private reviewService: ReviewsService) { }
 
   ngOnInit(): void {
+    console.log("START")
     this.reviewService.getReviews();
     this.reviewChangedEvent_sub = this.reviewService.reviewChangedEvent
       .subscribe(
